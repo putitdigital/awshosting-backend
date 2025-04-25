@@ -28,6 +28,16 @@
   --header-text-color:#174887;
   --side_text_color: #000;
 }
+.btn-primary{
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.btn-primary img{
+  margin-right: 16px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  width: 62px;
+}
 
 * {
     margin: 0;
@@ -204,8 +214,8 @@ body {
   text-decoration: none;
   border-left: 3px solid var(--accent-color);
   margin-bottom: 46px;
-  padding-bottom: 13px;
-  padding-top: 13px;
+  padding-bottom: 12px;
+  padding-top: 12px;
 
 }
 .side-button{
@@ -386,6 +396,26 @@ height: 400px;
   .row_space{
     margin-top: 5%;
   }
+  .row_space_in{
+    margin-top: 2%;
+  }
+  #home .slide-title h2{
+text-transform: uppercase;
+font-size: 40px;
+font-weight: 900;
+
+  } 
+   #home .slide-text h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    }
+    #home .slide-text .uppercase{
+      text-transform: uppercase;
+      font-size: 30px;
+      font-weight: 500;
+      }
+      
   .border_card{
     border: solid 1px var(--accent-color);
     border-radius: 8px;
@@ -412,8 +442,43 @@ height: 400px;
   .accreditations h1{
     font-size: 48px;
   }
-
-  .products_container {
+  #tab{
+    border-bottom: 7px solid #D9D9D9;
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+  }
+  #tab a{
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 20px;
+    margin-right: 44px;
+  }
+  #tab a.active{
+    border-bottom: 7px solid var(--accent-color);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0; 
+    padding-bottom: 14px;
+  }
+/* #products .side_text_style ul{
+  padding: 37px 0;
+} */
+ #experience .row .col h3{
+  font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+ }
+ #experience .row .col h5{
+  font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+ }
+  #products .container .subheading p{
+    font-size: 30px;
+    font-weight: 700;
 
   }
   .demo-wrapper {
@@ -632,10 +697,17 @@ header.scrolled {
     position: absolute;
     width: 6px;
     height: 6px;
-    background-color: var(--accent-color);
+    /* background-color: var(--accent-color); */
     border-radius: 50%;
     bottom: 5px;
     right: -8px;
+}
+#contact{
+  /* #F2F2F2 */
+  /* #f0efef */
+  background-color: var(--light-gray);
+  padding-top: 50px;
+  padding-bottom: 60px;
 }
 
 .nav-links {
@@ -1622,6 +1694,7 @@ footer {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  max-width: 1433px;
 }
 
 h2 {
@@ -1814,7 +1887,7 @@ h2 {
 .hero-style .slide-title,
 .hero-style .slide-text,
 .hero-style .slide-btns {
-  max-width: 690px;
+  max-width: 823px;;
 }
 
 .hero-style .slide-title h2 {
