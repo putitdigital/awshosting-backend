@@ -78,9 +78,10 @@ sr.reveal('.home-scroll', {delay: 200});
 sr.reveal('.skills-name', {distance: '20px', delay: 50, interval: 100});
 sr.reveal('.skills-img', {delay: 400});
 
-// sr.reveal('.portfolio-img', {interval: 200});
+sr.reveal('.card_size_a', {interval: 200});
 
-// sr.reveal('.contact-subtitle', {});
-// sr.reveal('.contact-text', {interval: 200});
-// sr.reveal('.contact-input', {delay: 400});
-// sr.reveal('.contact-button', {delay: 600});
+//sr.reveal('.contact-subtitle', {});
+sr.reveal('.contact-text', {interval: 200});
+sr.reveal('.contact-input', {delay: 400});
+sr.reveal('.contact-button', {delay: 600});
+
