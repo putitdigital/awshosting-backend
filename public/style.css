@@ -150,7 +150,7 @@ body {
   font-weight: 600 ;
 }
 #experience .card{
-  padding: 140px;
+  padding: 90px 140px;
 }
 .form button{
   color: var(--white);
@@ -246,6 +246,10 @@ body {
   text-align: center;
   color: var(--white);
 }
+.Accreditations .row{
+  margin-bottom: 48px;
+
+}
 
 #products .dark-card p{
   font-size: 20px;
@@ -254,6 +258,7 @@ body {
   color: var(--white);
 }
 .side_text_style{
+  padding-left: 60px;
   font-size: 16px;
   line-height: 25px;
   font-weight:700;
@@ -293,6 +298,9 @@ body {
   height: 436px;
 }
 .card_size_b{
+  height: 490px;
+}
+.card_size_c{
   height: 490px;
 }
 
@@ -338,13 +346,14 @@ height: 400px;
 }
 .Accreditations{
   height: 490px;
+  padding: 36px;
 }
 .Accreditations .b{
   border-bottom: 3px solid var(--accent-color);
 }
 #about .Accreditations h1{
   color: var(--accent-color);
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 400;
   
 }
@@ -371,8 +380,14 @@ height: 400px;
 #study .border-card{
   border: #9c9c9c52 solid 1px;
   border-radius: 22px;
-  padding: 33px;
+  padding: 50px;
 }
+.font-change{
+  font-weight: 200;
+}
+/* .set_ ul {
+  height: 90px;
+} */
 .intro{
     font-size: 24px;
     height: 222px;
@@ -505,17 +520,17 @@ font-weight: 900;
     font-size: 48px;
   }
   #tab{
-    border-bottom: 7px solid #D9D9D9;
+    
     width: 100%;
     border-radius: 0;
     position: relative;
   }
   #tab a{
+    border-bottom: 7px solid #D9D9D9;
     font-size: 16px;
     font-weight: 600;
     text-align: left;
     line-height: 20px;
-    margin-right: 44px;
   }
   #tab a.active{
     border-bottom: 7px solid var(--accent-color);
@@ -1600,10 +1615,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .header-container {
-        flex-wrap: wrap;
-        gap: 15px;
-    }
+
     
     .nav-menu {
         order: 3;
@@ -2199,6 +2211,9 @@ a:hover {
         user-select: initial;
     }
 }
+.d_side_{
+  padding-top: 60px;
+}
 
 footer {
   margin: 0 auto;
@@ -2222,3 +2237,728 @@ input[type="radio"] {
   margin: 0;
 }
 
+.logo img{
+  width: 300px;
+}
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .header-container {
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 88%;
+    margin: 0 auto;
+    padding: 0px 19px;
+}
+  body{
+    font-size: 12px;
+  }
+  .logo img{
+    width: 123px;
+  }
+  .mobile-menu-btn {
+    margin: 8px;
+    display: block;
+}
+  .nav-menu {
+    gap: 0;
+    font-size: 8px;
+  }
+  .nav-menu a.active {
+    padding: 3px 8px;
+  }
+  .slide-title img{
+   width: 200px;
+  }
+  #home .slide-text h1 {
+    font-size: 20px;
+  }
+  .hero-style .slide-text p {
+    font-size: 15px;
+  }
+  #home .slide-title h2 {
+    font-size: 20px;
+  }
+  .hero-style .slide-title, .hero-style .slide-text, .hero-style .slide-btns {
+  max-width: 550px;
+  }
+  
+  #home .slide-text .uppercase {
+    font-size: 15px;
+  }
+  .btn-primary img {
+    margin-right: 8px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width: 30px;
+}
+.btn-primary{
+  font-size: 13px;
+}
+section {
+  padding-top: 80px;
+}
+.card_size_a {
+  height: 317px;
+  width: 400px;
+}
+.col-9 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+.card_size_b {
+  height: 390px;
+  width: 400px;
+}
+.card_size_c {
+  height: 333px;
+}
+.col-3 {
+  flex: 0 0 auto;
+  width: 60%;
+}
+.card-text {
+  font-size: 12px;
+  line-height: 20px;
+}
+.side_text_style {
+  padding-left: 9px;
+  font-size: 10px;
+  line-height: 20px;
+}
+.side_text_style ul img {
+  margin-bottom: 10px;
+  width: 85px;
+}
+.side_text_style ul {
+  margin-bottom: 20px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.subheading h1 {
+  font-size: 20px;
+  line-height: 55%;
+}
+.side-button {
+  font-size: 10px;
+  padding: 0px 6px;
+}
+#about .card-img .icon {
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+.card .icon {
+  width: 135px;
+}
+#about .card-img {
+  margin-bottom: 0px;
+}
+#about .Accreditations h1 {
+  font-size: 14px;
+}
+.Accreditations img {
+  width: 120px;
+}
+#products .container .subheading p {
+  font-size: 18px;
+}
+#products .dark-card img {
+  width: 60px;
+}
+#products .dark-card h1 {
+  margin-bottom: 0px;
+  margin-top: 10px;
+  font-size: 15px;
+}
+#experience .col-10 {
+  flex: 0 0 auto;
+  width: 91.333333%;
+}
+#products .dark-card p {
+  font-size: 10px;
+}
+#products .dark-card {
+  height: 270px;
+}
+#tab a {
+  border-bottom: 5px solid #D9D9D9;
+  font-size: 10px;
+  line-height: 14px;
+}
+.big_card h1 {
+  font-size: 18px;
+}
+.big_card h3 {
+  font-size: 11px;
+}
+#services p {
+  font-size: 13px;
+}
+.areas_benefits h1 {
+  font-size: 20px;
+}
+#experience p {
+  font-size: 13px;
+}
+#experience .row .col h3 {
+  font-size: 16px;
+}
+#experience .card {
+  padding: 90px 98px;
+}
+#experience .card .skills-img {
+  width: 70px;
+}
+#experience .row .col h5 {
+  font-size: 10px;
+}
+#experience h3{
+  font-size: 16px;
+}
+.blue-card h1 {
+  font-size: 20px;
+
+}
+.blue-card h3 {
+  font-size: 13px;
+}
+
+#experience .inner-blue-card p {
+  font-size: 12px;
+  line-height: 120%;
+}
+.inner-blue-card {
+  width: 100%;
+}
+.inner-blue-card .desktop {
+  width: 255px;
+  left: 159px;
+  top: 247px;
+}
+#experience .inner-card-container .card {
+  padding: 20px;
+}
+.blue-card {
+  width: 408px;
+  height: 375px;
+}
+#experience .col-2 {
+  flex: 0 0 auto;
+  width: 50.666667%;
+}
+.card .white_logo {
+  width: 220px;
+}
+.d_side_ {
+  padding-top: 31px;
+}
+.video_card img{
+  width: 400px;
+}
+.smart-card {
+  margin-bottom: 13px;
+  padding: 4px;
+}
+.smart-card img{
+  width: 80px;
+}
+.smart-card h4 {
+  font-size: 13px;
+}
+.smart-card p{
+  font-size: 9px;
+}
+.Accreditations {
+  height: 370px;
+}
+#study .col-9 h1 {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 18px;
+}
+#media .col-10 {
+  flex: 0 0 auto;
+  width: 80.333333%;
+}
+#study p {
+  font-size: 10px;
+  line-height: 19px;
+}
+#contact {
+  padding-bottom: 20px;
+}
+.COCA-COLA{
+  width: 90px;
+}
+.next_cola h1{
+  font-size: 17px;
+}
+#contact .form {
+  width: 404px;
+  height: 392px;
+}
+
+}
+      
+/* Low resolution Tablets and iPads */
+@media (min-width: 481px) and (max-width: 767px) {
+  body{
+    font-size: 12px;
+  }
+  .logo img{
+    width: 50px;
+  }
+  .nav-menu {
+    gap: 0;
+    font-size: 8px;
+  }
+  .nav-menu a.active {
+    padding: 3px 8px;
+  }
+  .slide-title img{
+   width: 200px;
+  }
+  #home .slide-text h1 {
+    font-size: 20px;
+  }
+  .hero-style .slide-text p {
+    font-size: 15px;
+  }
+  #home .slide-title h2 {
+    font-size: 20px;
+  }
+  .hero-style .slide-title, .hero-style .slide-text, .hero-style .slide-btns {
+  max-width: 550px;
+  }
+  
+  #home .slide-text .uppercase {
+    font-size: 15px;
+  }
+  .btn-primary img {
+    margin-right: 8px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width: 30px;
+}
+.btn-primary{
+  font-size: 13px;
+}
+section {
+  padding-top: 80px;
+}
+.card_size_a {
+  height: 280px;
+}
+.card_size_b {
+  height: 350px;
+}
+.card_size_c {
+  height: 350px;
+}
+.card-text {
+  font-size: 12px;
+  line-height: 20px;
+}
+.side_text_style {
+  padding-left: 9px;
+  font-size: 10px;
+  line-height: 20px;
+}
+.side_text_style ul img {
+  margin-bottom: 10px;
+  width: 85px;
+}
+.side_text_style ul {
+  margin-bottom: 20px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.subheading h1 {
+  font-size: 40px;
+  line-height: 60%;
+}
+.side-button {
+  font-size: 10px;
+  padding: 0px 6px;
+}
+#about .card-img .icon {
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+.card .icon {
+  width: 40px;
+}
+#about .card-img {
+  margin-bottom: 0px;
+}
+#about .Accreditations h1 {
+  font-size: 14px;
+}
+.Accreditations img {
+  width: 120px;
+}
+#products .container .subheading p {
+  font-size: 18px;
+}
+#products .dark-card img {
+  width: 90px;
+}
+#products .dark-card h1 {
+  margin-bottom: 0px;
+  margin-top: 10px;
+  font-size: 15px;
+}
+#products .dark-card p {
+  font-size: 10px;
+}
+#products .dark-card {
+  height: 270px;
+}
+#tab a {
+  border-bottom: 5px solid #D9D9D9;
+  font-size: 10px;
+  line-height: 14px;
+}
+.big_card h1 {
+  font-size: 18px;
+}
+.big_card h3 {
+  font-size: 11px;
+}
+#services p {
+  font-size: 13px;
+}
+.areas_benefits h1 {
+  font-size: 20px;
+}
+#experience p {
+  font-size: 13px;
+}
+#experience .row .col h3 {
+  font-size: 16px;
+}
+#experience .card {
+  padding: 90px 98px;
+}
+#experience .card .skills-img {
+  width: 70px;
+}
+#experience .row .col h5 {
+  font-size: 10px;
+}
+#experience h3{
+  font-size: 16px;
+}
+.blue-card h1 {
+  font-size: 20px;
+
+}
+.blue-card h3 {
+  font-size: 13px;
+}
+
+#experience .inner-blue-card p {
+  font-size: 12px;
+  line-height: 120%;
+}
+.inner-blue-card {
+  width: 53%;
+}
+.inner-blue-card .desktop {
+  width: 490px;
+  left: 184px;
+  top: 114px;
+}
+#experience .inner-card-container .card {
+  padding: 40px;
+}
+.blue-card {
+  color: var(--white);
+  width: 560px;
+  height: 492px;
+}
+.card .white_logo {
+  width: 220px;
+}
+.d_side_ {
+  padding-top: 31px;
+}
+.video_card img{
+  width: 790px;
+}
+.smart-card img{
+  width: 100px;
+}
+.smart-card h4 {
+  font-size: 13px;
+}
+.smart-card p{
+  font-size: 9px;
+}
+.Accreditations {
+  height: 370px;
+}
+#study .col-9 h1 {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 18px;
+}
+#study p {
+  font-size: 10px;
+  line-height: 19px;
+}
+#contact {
+  padding-bottom: 20px;
+}
+.COCA-COLA{
+  width: 90px;
+}
+.next_cola h1{
+  font-size: 35px;
+}
+#contact .form {
+  width: 668px;
+  height: 410px;
+}
+ 
+}
+      
+/* Tablets iPads (Portrait) */
+@media (min-width: 768px) and (max-width: 1024px){
+  body{
+    font-size: 12px;
+  }
+  .logo img{
+    width: 50px;
+  }
+  .nav-menu {
+    gap: 0;
+    font-size: 8px;
+  }
+  .nav-menu a.active {
+    padding: 3px 8px;
+  }
+  .slide-title img{
+   width: 200px;
+  }
+  #home .slide-text h1 {
+    font-size: 20px;
+  }
+  .hero-style .slide-text p {
+    font-size: 15px;
+  }
+  #home .slide-title h2 {
+    font-size: 20px;
+  }
+  .hero-style .slide-title, .hero-style .slide-text, .hero-style .slide-btns {
+  max-width: 550px;
+  }
+  
+  #home .slide-text .uppercase {
+    font-size: 15px;
+  }
+  .btn-primary img {
+    margin-right: 8px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width: 30px;
+}
+.btn-primary{
+  font-size: 13px;
+}
+section {
+  padding-top: 80px;
+}
+.card_size_a {
+  height: 280px;
+}
+.card_size_b {
+  height: 350px;
+}
+
+.card_size_c {
+  height: 350px;
+}
+.card-text {
+  font-size: 12px;
+  line-height: 20px;
+}
+.side_text_style {
+  padding-left: 9px;
+  font-size: 10px;
+  line-height: 20px;
+}
+.side_text_style ul img {
+  margin-bottom: 10px;
+  width: 85px;
+}
+.side_text_style ul {
+  margin-bottom: 20px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.subheading h1 {
+  font-size: 40px;
+  line-height: 60%;
+}
+.side-button {
+  font-size: 10px;
+  padding: 0px 6px;
+}
+#about .card-img .icon {
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+.card .icon {
+  width: 40px;
+}
+#about .card-img {
+  margin-bottom: 0px;
+}
+#about .Accreditations h1 {
+  font-size: 14px;
+}
+.Accreditations img {
+  width: 120px;
+}
+#products .container .subheading p {
+  font-size: 18px;
+}
+#products .dark-card img {
+  width: 90px;
+}
+#products .dark-card h1 {
+  margin-bottom: 0px;
+  margin-top: 10px;
+  font-size: 15px;
+}
+#products .dark-card p {
+  font-size: 10px;
+}
+#products .dark-card {
+  height: 270px;
+}
+#tab a {
+  border-bottom: 5px solid #D9D9D9;
+  font-size: 10px;
+  line-height: 14px;
+}
+.big_card h1 {
+  font-size: 18px;
+}
+.big_card h3 {
+  font-size: 11px;
+}
+#services p {
+  font-size: 13px;
+}
+.areas_benefits h1 {
+  font-size: 20px;
+}
+#experience p {
+  font-size: 13px;
+}
+#experience .row .col h3 {
+  font-size: 16px;
+}
+#experience .card {
+  padding: 90px 98px;
+}
+#experience .card .skills-img {
+  width: 70px;
+}
+#experience .row .col h5 {
+  font-size: 10px;
+}
+#experience h3{
+  font-size: 16px;
+}
+.blue-card h1 {
+  font-size: 20px;
+
+}
+.blue-card h3 {
+  font-size: 13px;
+}
+
+#experience .inner-blue-card p {
+  font-size: 12px;
+  line-height: 120%;
+}
+.inner-blue-card {
+  width: 53%;
+}
+.inner-blue-card .desktop {
+  width: 490px;
+  left: 184px;
+  top: 114px;
+}
+#experience .inner-card-container .card {
+  padding: 40px;
+}
+.blue-card {
+  color: var(--white);
+  width: 560px;
+  height: 492px;
+}
+.card .white_logo {
+  width: 220px;
+}
+.d_side_ {
+  padding-top: 31px;
+}
+.video_card img{
+  width: 790px;
+}
+.smart-card img{
+  width: 100px;
+}
+.smart-card h4 {
+  font-size: 13px;
+}
+.smart-card p{
+  font-size: 9px;
+}
+.Accreditations {
+  height: 370px;
+}
+#study .col-9 h1 {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 18px;
+}
+#study p {
+  font-size: 10px;
+  line-height: 19px;
+}
+#contact {
+  padding-bottom: 20px;
+}
+.COCA-COLA{
+  width: 90px;
+}
+.next_cola h1{
+  font-size: 35px;
+}
+#contact .form {
+  width: 668px;
+  height: 410px;
+}
+}
+  
+/* Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+
+}
+  
+/* Big boi Monitors */
+@media (min-width: 1281px) {
+
+}
