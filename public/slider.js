@@ -58,7 +58,18 @@
  // DATA BACKGROUND IMAGE
  var sliderBgSetting = $(".slide-bg-image");
  sliderBgSetting.each(function(indx){
-     if ($(this).attr("data-background")){
-         $(this).css("background-image", "url(" + $(this).data("background") + ")");
-     }
+
+    const screenWidth = window.innerWidth;
+    // console.log(screenWidth)
+        if (screenWidth >= 820) {
+            if ($(this).attr("data-background")){
+                // console.log($(this).attr("data-background"))
+                 $(this).css("background-image", "url(" + $(this).data("background") + ")");
+             }
+        } else {
+            if ($(this).attr("data-background-mobile")){
+                // console.log($(this).attr("data-background-mobile"))
+                 $(this).css("background-image", "url(" + $(this).data("background") + ")");
+             }
+        }
  });

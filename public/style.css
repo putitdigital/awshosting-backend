@@ -2084,6 +2084,11 @@ a:hover {
     font-size: 13px;
   }
 }
+.footer-container img{
+  float:left;
+  width: 400px;
+  margin-top: 20px;
+}
 
 
 /* _____________________________________________[expansion panel] */
@@ -2296,7 +2301,7 @@ input[type="radio"] {
     font-size: 20px;
   }
   .hero-style .slide-title, .hero-style .slide-text, .hero-style .slide-btns {
-  max-width: 550px;
+  max-width: 250px;
   }
   
   #home .slide-text .uppercase {
@@ -2312,11 +2317,11 @@ input[type="radio"] {
   font-size: 13px;
 }
 section {
-  padding-top: 80px;
+  padding-top: 30px;
 }
 .card_size_a {
-  height: 317px;
-  width: 400px;
+  height: 340px;
+  width: 350px;
 }
 .col-9 {
   flex: 0 0 auto;
@@ -2334,7 +2339,7 @@ section {
   width: 60%;
 }
 .card-text {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 20px;
 }
 .side_text_style {
@@ -2352,6 +2357,7 @@ section {
   padding-top: 0px;
 }
 .subheading h1 {
+  margin-bottom: 14px;
   font-size: 20px;
   line-height: 55%;
 }
@@ -2513,6 +2519,11 @@ section {
 #contact .form {
   width: 404px;
   height: 392px;
+}
+.footer-container img{
+  float:left;
+  width: 400px;
+  margin-top: 20px;
 }
 
 }
@@ -2738,6 +2749,11 @@ section {
   width: 668px;
   height: 410px;
 }
+.footer-container img{
+  float:left;
+  width: 400px;
+  margin-top: 20px;
+}
  
 }
       
@@ -2962,6 +2978,11 @@ section {
 #contact .form {
   width: 668px;
   height: 410px;
+}
+.footer-container img{
+  float:left;
+  width: 320px;
+  margin-top: 20px;
 }
 }
   
