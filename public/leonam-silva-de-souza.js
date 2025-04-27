@@ -81,7 +81,7 @@ sr.reveal('.skills-img', {delay: 400});
 sr.reveal('.card_size_a', {interval: 200});
 
 //sr.reveal('.contact-subtitle', {});
-sr.reveal('.contact-text', {interval: 200});
-sr.reveal('.contact-input', {delay: 400});
-sr.reveal('.contact-button', {delay: 600});
+// sr.reveal('.contact-text', {interval: 200});
+// sr.reveal('.contact-input', {delay: 400});
+//sr.reveal('.contact-button', {delay: 600});
 

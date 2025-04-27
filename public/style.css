@@ -85,6 +85,14 @@ section{
   background-color: var(--accent-color);
   border-color: var(--accent-color);
 }
+.container_hero {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1433px;
+}
 .btn-primary img{
   margin-right: 16px;
   margin-top: 6px;
@@ -190,8 +198,9 @@ body {
 .smart-card h4{
   font-size: 24px;
 }
-#experience .inner-card-container .card{
-  padding: 90px;
+#experience .img-card img {
+  max-width: 100%;
+  height: auto;
 }
 .blue-card h1 span{
   font-weight: 700 ;
@@ -351,13 +360,16 @@ height: 400px;
 .Accreditations .b{
   border-bottom: 3px solid var(--accent-color);
 }
+.COCA-COLA{
+  padding-left: 60px;
+}
 #about .Accreditations h1{
   color: var(--accent-color);
   font-size: 28px;
   font-weight: 400;
   
 }
-#study .col-9 h1{
+#study .border-card  h1{
 
   font-weight: 700 ;
   font-size: 30px;
@@ -788,7 +800,7 @@ header.scrolled {
 
 .nav-menu {
     display: flex;
-    gap: 25px;
+    gap: 40px;
 }
 
 .nav-menu a {
@@ -796,23 +808,20 @@ header.scrolled {
     color: var(--header-text-color);
     transition: var(--transition);
     position: relative;
-    padding: 4px 12px;
-    border-radius: 10px;
+    padding: 6px 0px;
+    border-radius: 0px;
 }
 
 .nav-menu a.active {
 
-    border-bottom:3px solid var(--primary-color);
+    border-bottom:3px solid var(--accent-color);
     color: var(--header-text-color);
-    box-shadow: 0 4px 10px rgba(58, 110, 165, 0.2);
-    padding: 4px 12px;
+    padding: 6px 0px;
 }
 
 .nav-menu a:hover {
-  border-bottom:3px solid var(--primary-color);
-    color: var(--header-text-color);
-    transform: translateY(-2px);
-    padding: 4px 12px;
+  border-bottom:3px solid var(--accent-color);
+  color: var(--header-text-color);
 }
 
 
@@ -1918,7 +1927,7 @@ h2 {
 
 .hero-slider .swiper-container-horizontal > .swiper-pagination-bullets{
   bottom:50px;
-    max-width: 1200px;
+    max-width: 130px;
     padding: 0 15px;
     margin: 0 auto;
     left: 50%;
@@ -1952,8 +1961,8 @@ h2 {
 }
 
 @media screen and (min-width: 992px) {
-  .hero-style .container {
-    padding-top: 95px;
+  .hero-style .container_hero {
+    padding-top: 0px;
   }
 }
 
@@ -2212,7 +2221,7 @@ a:hover {
     }
 }
 .d_side_{
-  padding-top: 60px;
+  padding-top: 152px;
 }
 
 footer {
@@ -2442,8 +2451,9 @@ section {
   left: 159px;
   top: 247px;
 }
-#experience .inner-card-container .card {
-  padding: 20px;
+#experience .img-card img  {
+  max-width: 100%;
+    height: auto;
 }
 .blue-card {
   width: 408px;
@@ -2478,7 +2488,7 @@ section {
 .Accreditations {
   height: 370px;
 }
-#study .col-9 h1 {
+#study .border-card  h1 {
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 18px;
@@ -2676,8 +2686,9 @@ section {
   left: 184px;
   top: 114px;
 }
-#experience .inner-card-container .card {
-  padding: 40px;
+#experience .img-card img {
+  max-width: 100%;
+  height: auto;
 }
 .blue-card {
   color: var(--white);
@@ -2705,7 +2716,7 @@ section {
 .Accreditations {
   height: 370px;
 }
-#study .col-9 h1 {
+#study .border-card  h1 {
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 18px;
@@ -2900,8 +2911,9 @@ section {
   left: 184px;
   top: 114px;
 }
-#experience .inner-card-container .card {
-  padding: 40px;
+#experience .img-card img {
+  max-width: 100%;
+  height: auto;
 }
 .blue-card {
   color: var(--white);
@@ -2929,7 +2941,7 @@ section {
 .Accreditations {
   height: 370px;
 }
-#study .col-9 h1 {
+#study .border-card  h1 {
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 18px;

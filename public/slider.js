@@ -3,7 +3,7 @@
  jQuery('.swiper-slide').each( function(index){
      menu.push( jQuery(this).find('.slide-inner').attr("data-text") );
  });
- var interleaveOffset = 0.5;
+ var interleaveOffset = 0;
  var swiperOptions = {
      loop: true,
      speed: 1000,
