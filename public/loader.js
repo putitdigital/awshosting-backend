@@ -11,7 +11,7 @@
         const backToTop = document.getElementById('backToTop');
         const darkModeToggle = document.getElementById('darkModeToggle');
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const navLinks = document.getElementById('navLinks');
+        const navLinks = document.getElementById('nav-menu');
         const productImages = document.querySelectorAll('.product-image img');
         const wishlistButtons = document.querySelectorAll('.wishlist');
         const filterButtons = document.querySelectorAll('.filter-button');
