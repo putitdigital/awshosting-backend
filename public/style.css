@@ -108,7 +108,7 @@ section{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat';
+    font-family: 'Trebuchet MS';
 }
 
 body {
@@ -2012,7 +2012,7 @@ h2 {
 
 .hero-style .slide-text p {
   opacity: 0.8;
-  font-family: "Montserrat";
+  font-family: "Trebuchet MS";
   font-size: 20px;
   font-weight: 500;
   line-height: 1.25;
@@ -2329,7 +2329,7 @@ section {
 }
 .card_size_a {
   height: 340px;
-  width: 350px;
+  width: 93vw;
 }
 .col-9 {
   flex: 0 0 auto;
@@ -2337,10 +2337,11 @@ section {
 }
 .card_size_b {
   height: 390px;
-  width: 400px;
+  width: 94vw;
 }
 .card_size_c {
   height: 333px;
+  width:94vw;
 }
 .col-3 {
   flex: 0 0 auto;
@@ -2465,8 +2466,12 @@ section {
   left: 159px;
   top: 247px;
 }
+iframe {
+  width: 93vw;
+  height: 226px;
+}
 #experience .img-card img  {
-  max-width: 100%;
+  max-width: 93vw;
     height: auto;
 }
 .blue-card {
@@ -2501,6 +2506,7 @@ section {
 }
 .Accreditations {
   height: 370px;
+  width: 93vw;
 }
 #study .border-card  h1 {
   font-size: 16px;
