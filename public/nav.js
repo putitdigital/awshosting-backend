@@ -116,3 +116,15 @@ $(document).ready(function() {
     var $oldTab = this.$tpanel.find('.tab.active');
     this.switchTabs($oldTab, $tab);
   }
+//____________________________________________________
+
+// const toHome = document.querySelector('.home_to');
+
+// toHome.addEventListener('click', () => {
+//   console.log("click")
+//   window.scrollTo({
+//       top: 0,
+//       behavior: 'smooth'
+//   });
+// });
+ 

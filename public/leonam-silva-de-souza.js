@@ -42,12 +42,18 @@ function scrollActive() {
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
             document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.add('active');
-            
+            // const backToTop = document.querySelector('.home_to');
             // if(sectionId == "home"){
-            //     console.log(sectionId);
-            //     document.getElementById("home").style.padding = "100px 0px 0px 0px";
-            // }else{
-            //     document.getElementById(sectionId).style.padding = "170px 0px 0px 0px";
+            //     backToTop.addEventListener('click', () => {
+            //         console.log(sectionId);
+            //         console.log(scrollY);
+                    
+            //             window.scrollTo({
+            //                 top: 0,
+            //                 behavior: 'smooth'
+            //             });
+                    
+            //     });  
             // }
         } else {
             document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.remove('active');

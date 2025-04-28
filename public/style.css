@@ -1542,6 +1542,10 @@ footer {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
     z-index: 99;
 }
+#home{
+  background-color: #0095DA;
+  padding-top:0;
+}
 
 .back-to-top.visible {
     opacity: 1;

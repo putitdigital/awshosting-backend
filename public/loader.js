@@ -33,6 +33,7 @@
                 backToTop.classList.add('visible');
                 document.querySelector('header').classList.add('scrolled');
             } else {
+                //console.log("not "+window.scrollY)
                 backToTop.classList.remove('visible');
                 document.querySelector('header').classList.remove('scrolled');
             }
