@@ -2300,8 +2300,21 @@ input[type="radio"] {
     font-size: 8px;
   }
   .nav-menu a.active {
-    padding: 3px 8px;
+    padding: 0px 0px;
+    border-bottom: 1px solid var(--accent-color);
+    width: 90px;
   }
+
+.nav-menu a:hover {
+  border-bottom: 1px solid var(--accent-color);
+  width: 90px;
+  color: var(--header-text-color);
+}
+
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
   .slide-title img{
    width: 200px;
   }
