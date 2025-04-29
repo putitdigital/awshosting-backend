@@ -1376,7 +1376,7 @@ footer {
 }
 .text-align-left h5{ 
   font-size: 16px;
-  font-weight: 700px;
+  font-weight: 700;
   line-height: 30px;
 }
 .text-align-left li{ 
@@ -2315,7 +2315,7 @@ input[type="radio"] {
     font-size: 20px;
   }
   .hero-style .slide-title, .hero-style .slide-text, .hero-style .slide-btns {
-  max-width: 250px;
+  max-width: 300px;
   }
   
   #home .slide-text .uppercase {
@@ -2373,7 +2373,7 @@ section {
 }
 .subheading h1 {
   margin-bottom: 14px;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 55%;
 }
 .side-button {
@@ -2537,14 +2537,22 @@ iframe {
   font-size: 17px;
 }
 #contact .form {
-  width: 404px;
-  height: 392px;
+  width: 93vw;
+  height: 470px;
 }
 .footer-container img{
-  float:left;
-  width: 400px;
-  margin-top: 20px;
+  float: left;
+  width: 99px;
+  margin-top: 6px;
 }
+footer {
+  padding: 0;
+}
+.text-align-left ul li{
+  font-size: 12px;
+  font-weight: 400;
+}
+
 
 }
       
@@ -3000,9 +3008,9 @@ section {
   height: 410px;
 }
 .footer-container img{
-  float:left;
-  width: 320px;
-  margin-top: 20px;
+  float: left;
+  width: 203px;
+  margin-top: 5px;
 }
 }
   
