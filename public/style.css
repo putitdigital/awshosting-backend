@@ -29,6 +29,11 @@
   --side_text_color: #000;
 
 }
+.terms p{
+  padding-top: 15px;
+  color: white;
+  text-align: left;
+}
 iframe{
   width: 100%;
   height:790px;
@@ -86,6 +91,7 @@ section{
   padding-top: 170px;
 }
 .btn-primary{
+  padding-top: 12px;
   background-color: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -98,10 +104,10 @@ section{
   max-width: 1433px;
 }
 .btn-primary img{
-  margin-right: 16px;
-  margin-top: 6px;
-  margin-bottom: 6px;
-  width: 62px;
+  margin-right: 2px;
+  margin-top: 5px;
+  margin-bottom: 11px;
+  width: 120px;
 }
 
 * {
@@ -493,18 +499,18 @@ height: 400px;
     margin-top: 2%;
   }
   #home .slide-title h2{
-text-transform: uppercase;
+/* text-transform: uppercase; */
 font-size: 40px;
 font-weight: 900;
 
   } 
    #home .slide-text h1{
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 30px;
     font-weight: 700;
     }
     #home .slide-text .uppercase{
-      text-transform: uppercase;
+      /* text-transform: uppercase; */
       font-size: 30px;
       font-weight: 500;
       }
@@ -562,12 +568,12 @@ font-weight: 900;
  #experience .row .col h3{
   font-size: 30px;
     font-weight: 600;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
  }
  #experience .row .col h5{
   font-size: 20px;
     font-weight: 600;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
  }
   #products .container .subheading p{
     font-size: 30px;
@@ -1073,7 +1079,7 @@ select:hover, select:focus {
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 5px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 1px;
 }
 
@@ -1176,7 +1182,7 @@ select:hover, select:focus {
     font-weight: 600;
     z-index: 2;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 0.5px;
 }
 
