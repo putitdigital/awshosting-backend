@@ -38,25 +38,21 @@ function scrollActive() {
     sections.forEach(current => {
         const sectionHeight = current.offsetHeight;
         const sectionTop = current.offsetTop - 50;
-        const sectionId = current.getAttribute('id');
+        var sectionId = current.getAttribute('id');
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.add('active');
-            // const backToTop = document.querySelector('.home_to');
-            // if(sectionId == "home"){
-            //     backToTop.addEventListener('click', () => {
-            //         console.log(sectionId);
-            //         console.log(scrollY);
-                    
-            //             window.scrollTo({
-            //                 top: 0,
-            //                 behavior: 'smooth'
-            //             });
-                    
-            //     });  
-            // }
+            if(sectionId == "home"){
+                document.querySelector('.home_to').classList.add('active');
+            }else{
+                document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.add('active');
+            }
         } else {
-            document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.remove('active');
+            
+            if(sectionId == "home"){
+                document.querySelector('.home_to').classList.remove('active');
+            }else{
+                document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.remove('active');
+            }
         }
     })
 }
