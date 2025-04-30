@@ -2328,7 +2328,7 @@ input[type="radio"] {
     font-size: 20px;
   }
   .hero-style .slide-title, .hero-style .slide-text, .hero-style .slide-btns {
-  max-width: 300px;
+  max-width: 350px;
   }
   
   #home .slide-text .uppercase {
@@ -2338,7 +2338,11 @@ input[type="radio"] {
     margin-right: 8px;
     margin-top: 3px;
     margin-bottom: 3px;
-    width: 30px;
+    width: 100px;
+}
+
+.hero-style .slide-btns > a:first-child {
+  padding: 6px;
 }
 .btn-primary{
   font-size: 13px;
@@ -2391,7 +2395,7 @@ section {
 }
 .side-button {
   font-size: 10px;
-  padding: 0px 6px;
+  padding: 5px 8px;
 }
 #about .card-img .icon {
   margin-bottom: 25px;
@@ -2607,7 +2611,7 @@ footer {
     margin-right: 8px;
     margin-top: 3px;
     margin-bottom: 3px;
-    width: 30px;
+    width: 57px;
 }
 .btn-primary{
   font-size: 13px;
