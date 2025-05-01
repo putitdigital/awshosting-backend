@@ -296,7 +296,7 @@ body {
 
 }
 .side-button{
-  padding: 5px;
+  padding: 6px 18px;
   border-radius: 10px;
   border-color: var(--accent-color);
   background: var(--accent-color);
@@ -789,6 +789,9 @@ header.scrolled {
     text-decoration: none;
     position: relative;
     display: inline-block;
+}
+.side_logos{
+  margin-top: 213px;
 }
 
 .logo::after {
@@ -2419,6 +2422,9 @@ section {
 #products .dark-card img {
   width: 60px;
 }
+.side_logos {
+  margin-top: 35px;
+}
 #products .dark-card h1 {
   margin-bottom: 0px;
   margin-top: 10px;
@@ -2458,7 +2464,7 @@ section {
   font-size: 16px;
 }
 #experience .card {
-  padding: 90px 98px;
+  padding: 19px 19px;
 }
 #experience .card .skills-img {
   width: 70px;
