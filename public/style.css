@@ -1498,6 +1498,11 @@ footer {
 .in_styling{
   padding-top: 90px;
 }
+.in_styling ul{
+  list-style: none;
+  border-left: var(--accent-color) solid 3px;
+}
+
 
 .subscribe-form button {
     position: absolute;
@@ -2465,6 +2470,9 @@ section {
 }
 .in_styling{
   padding-top: 25px;
+}
+.in_styling .col{
+  padding-right: 50%;
 }
 .areas_benefits h1 {
   font-size: 20px;
