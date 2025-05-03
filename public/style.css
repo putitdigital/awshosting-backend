@@ -791,7 +791,7 @@ header.scrolled {
     display: inline-block;
 }
 .side_logos{
-  margin-top: 213px;
+  margin-top: 96px;
 }
 
 .logo::after {
@@ -1494,6 +1494,9 @@ footer {
 .subscribe-form input:focus {
     outline: none;
     background-color: rgba(255, 255, 255, 0.15);
+}
+.in_styling{
+  padding-top: 90px;
 }
 
 .subscribe-form button {
@@ -2313,7 +2316,9 @@ input[type="radio"] {
   width: 90px;
   color: var(--header-text-color);
 }
-
+.set_{
+  padding-top: 25px;
+}
 
 .nav-menu a:hover::after {
     width: 100%;
@@ -2383,8 +2388,9 @@ section {
   line-height: 20px;
 }
 .side_text_style ul img {
-  margin-bottom: 10px;
-  width: 85px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  width: 150px;
 }
 .side_text_style ul {
   margin-bottom: 20px;
@@ -2454,6 +2460,12 @@ section {
 #services p {
   font-size: 13px;
 }
+.areas_benefits .col{
+  padding: 0vw 22vw 0px 4vw;
+}
+.in_styling{
+  padding-top: 25px;
+}
 .areas_benefits h1 {
   font-size: 20px;
 }
@@ -2522,7 +2534,7 @@ iframe {
 }
 .smart-card {
   margin-bottom: 13px;
-  padding: 4px;
+  padding: 10px 0px;
 }
 .smart-card img{
   width: 80px;
@@ -2554,7 +2566,7 @@ iframe {
   padding-bottom: 20px;
 }
 .COCA-COLA{
-  width: 90px;
+  width: 140px;
 }
 .next_cola h1{
   font-size: 17px;
@@ -2568,12 +2580,20 @@ iframe {
   width: 99px;
   margin-top: 6px;
 }
+.cola-header .col-9{
+  width: 50%;
+  padding-top: 12px;
+}
+.cola-header .col-3{
+  width: 50%;
+}
 footer {
   padding: 0;
 }
 .text-align-left ul li{
   font-size: 12px;
   font-weight: 400;
+  line-height: 13px;
 }
 
 
