@@ -1569,7 +1569,9 @@ footer {
     z-index: 99;
 }
 #home{
-  padding-top:0;
+  padding-top: 0;
+  padding-bottom: 0px;
+  border-bottom: 0px solid #7a7a7a;
 }
 
 .back-to-top.visible {
