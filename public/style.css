@@ -1508,6 +1508,7 @@ footer {
   padding-top: 90px;
 }
 .in_styling ul{
+  width: 100vw;
   list-style: none;
   border-left: var(--accent-color) solid 3px;
 }
@@ -1737,7 +1738,12 @@ footer {
         flex-direction: column;
         gap: 10px;
     }
-    
+    .item h1{
+      font-size: 19px;
+    }
+    .item h3{
+      font-size: 16px;
+    }
     .newsletter-form button {
         position: static;
         width: 100%;
@@ -2411,6 +2417,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 0px;
   padding-top: 0px;
+  line-height: 12px;
 }
 .subheading h1 {
   margin-bottom: 14px;
@@ -2480,6 +2487,7 @@ section {
 }
 .in_styling{
   padding-top: 25px;
+  width: 100vw;
 }
 .in_styling .col{
   padding-right: 50%;
