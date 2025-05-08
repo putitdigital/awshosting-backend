@@ -41,6 +41,9 @@ iframe{
   width: 100%;
   height:790px;
 }
+.tab-pane{
+  padding-top: 50px;
+}
 .shiny-button{
   width: fit-content;
   position: relative;
@@ -2321,6 +2324,9 @@ input[type="radio"] {
   .mobile-menu-btn {
     margin: 8px;
     display: block;
+}
+.tab-pane{
+  padding-top: 50px;
 }
   .nav-menu {
     gap: 0;
