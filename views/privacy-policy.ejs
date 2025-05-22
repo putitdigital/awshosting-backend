@@ -1,787 +1,971 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>OkTik – The Digital Workplace</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta http-equiv="Expires" content="0">
-<meta property="og:site_name" content="OkTik | The Digital Workplace ®">
-<meta property="og:type" content="website">
-<meta property="og:title" content="OkTik | The Digital Workplace ®">
-<meta property="og:url" content="hhttps://www.oktik.net/">
-<meta property="og:description" content="OkTik brings together the latest workplace technologies to deliver impactful solutions for your Enterprise IT requirements. We provide the personnel, expertise and tools to accelerate and deliver even the most complex workplace transformation.">
-<link rel="icon" type="image/x-icon" href="../photos/logo/favicon.ico">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.theme.default.min.css" integrity="sha512-kCvsy+EQTW5w/iKoI6LuPIfaDvXtMv2rkkIYdZr6un5+nGTp28w4xvyvjdUwreUobgR2RFeepd5tAYZdSbOMRQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.min.css" integrity="sha512-1ooNNmIQGmVp9lNfyNxcTgNc2FuIu/jdsQ/nHDZBDy7MP0/60wyxM7VxZTmCKfAu3r8SLJgOYbaUBhpCsQP8dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" integrity="sha512-nSomje7hTV0g6A5X/lEZq8koYb5XZtrWD7GU2+aIJD35CePx89oxSM+S7k3hqNSpHajFbtmrjavZFxSEfl6pQA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<link rel="stylesheet" href="./style.css">
-<link rel="stylesheet" href="./card.css">
-<script src="https://unpkg.com/scrollreveal"></script>
+	<title>OkTik – The Digital Workplace</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta http-equiv="Expires" content="0">
+	<meta property="og:site_name" content="OkTik | The Digital Workplace ®">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="OkTik | The Digital Workplace ®">
+	<meta property="og:url" content="hhttps://www.oktik.net/">
+	<meta property="og:description"
+		content="OkTik brings together the latest workplace technologies to deliver impactful solutions for your Enterprise IT requirements. We provide the personnel, expertise and tools to accelerate and deliver even the most complex workplace transformation.">
+	<link rel="icon" type="image/x-icon" href="../photos/logo/favicon.ico">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.theme.default.min.css"
+		integrity="sha512-kCvsy+EQTW5w/iKoI6LuPIfaDvXtMv2rkkIYdZr6un5+nGTp28w4xvyvjdUwreUobgR2RFeepd5tAYZdSbOMRQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.min.css"
+		integrity="sha512-1ooNNmIQGmVp9lNfyNxcTgNc2FuIu/jdsQ/nHDZBDy7MP0/60wyxM7VxZTmCKfAu3r8SLJgOYbaUBhpCsQP8dw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"
+		integrity="sha512-nSomje7hTV0g6A5X/lEZq8koYb5XZtrWD7GU2+aIJD35CePx89oxSM+S7k3hqNSpHajFbtmrjavZFxSEfl6pQA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./card.css">
+	<script src="https://unpkg.com/scrollreveal"></script>
 </head>
+
 <body>
- <!-- Loading overlay -->
- <div class="loading-overlay">
-    <div class="loading-spinner"></div>
-</div>
-<header>
-    <div class="header-container">
-        <a href="#" class="logo"><img src="../photos/logo/OKTik Logo Final_OKTik Blue Logo.png" alt="" style="float:left;"></a>
-        <button class="mobile-menu-btn" id="mobileMenuBtn">
-            <i class="fas fa-bars"></i>
-        </button>
-        <nav class="nav-menu" id="nav-menu">
-            <a href="#" class="nav-link active home_to">Home</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#products" class="nav-link">Products</a>
-            <a href="#services" class="nav-link">Services</a>
-            <a href="#experience" class="nav-link">User experience</a>
-            <a href="#media" class="nav-link">Media and partners</a>
-            <a href="#study" class="nav-link">Case studies</a>
-            <a href="#contact" class="nav-link">Contact us</a>
-        </nav>
-    </div>
-</header>
-<main>
-	<section class="section">
-		<div class="container ">
-			<div class="row">
-				<div class="col">
-					<p>
-						OkTik Technology including its wholly owned (directly and indirectly) subsidiaries (hereinafter
-						“OkTiK”) is committed to protecting the privacy and security of the personal information of
-						our customers, employees and third parties.
-					</p>
-					<>
-						We respect each individual&#39;s right to personal privacy. We will collect and use information we
-						receive directly from you only in the ways disclosed in this Privacy Notice. This Privacy
-						Notice does not apply to practices that OkTik does not own or control, or to individuals that
-						OkTik does not employ or manage.
-					</p>
-						<p>1. Information We Collect</p>
-						</p>OkTik collects many kinds of information in order to operate effectively and provide you the
-						best products, services, and experiences we can. Some of this information you provide
-						directly to us. Some of it we get by observing how you interact with our products and
-						services. Some of it is available from other sources that we may combine with the data we
-						collect directly. Regardless of the source, we believe it is important to treat that information
-						with care and to help you maintain your privacy.</p>
-
-						</p>1.1 What we collect</p>
-						</p>Registration</p>
-
-						</p>When you sign up to use our sites or services you may be required to provide information
-						about yourself, such as your name, birthdate, organization name, e-mail and postal address
-						and postal code.</p>
-
-						</p>Signing In</p>
-
-						</p>To access some OkTik services, you will need to sign in with a username and password,
-						which we refer to as your user account.</p>
-
-						</p>Using Our Sites And Services</p>
-
-						</p>We collect information that tells us how you interact with our services, including the browser
-						you&#39;re using, your IP address, location, cookies or other unique IDs, the pages you visit and
-						features you use.</p>
-
-						</p>Product and Services Queries</p>
-
-						</p>If you request information about OkTik products and services, we will collect your name, e-
-						mail address, phone number, and additional company information.</p>
-
-						</p>Data From Other Sources</p>
-
-						</p>We may get additional information about you, such as demographic data we purchase from
-						other companies.</p>
-
-						</p>CCTV and Security Systemsv
-
-						</p>If you visit one of our offices, we may collect information captured on security systems that
-						are implemented there, including CCTV and key card entry systems and other security and
-						technology systems, to the extent permitted by applicable law.</p>
-
-						</p>Applicant and Candidate Data</p>
-
-						</p>In the context of career opportunities at OkTik, we may process and use certain information
-						(“Applicant Data”) you share with us and/or which we may collect or create during the
-						application or recruitment process, including:</p>
-
-						</p>Contact information, such as your name, address, e-mail address or phone number;
-						Details related to your work experience, such as your CV or resume, cover letter, previous
-						and/or relevant work experience, qualifications or other information provided to us in the
-						context of your application;
-						Information about the type of employment you are looking for or may be interested in,
-						including current and/or desired salary and other terms relating to compensation and
-						benefits and other job preferences;
-						Information from job interviews and/or assessments that you may have had with us
-						Details of how you heard about the position you are applying for
-						Reference information and/or information received from background checks (if applicable for
-						the position you have applied for, and as permitted by applicable laws), including information
-						provided by third parties;
-						Information from publicly available sources that we believe is relevant for the hiring process,
-						e.g. your LinkedIn profile;
-						Other information provided by you in the hiring process.
-						Please note that you may only share with us personal information of third parties if you have
-						obtained it in accordance with applicable data protection laws and have received all
-						necessary authorizations and consents.</p>
-
-						</p>1.2 How We Collect Information:
-						</p>We use a number of methods and technologies to gather information about how you use our
-						sites and services or otherwise interact with us, such as:</p>
-
-						</p>Web forms, such as when you type information into a registration or application form or type
-						a search query into a search box.
-						Technologies like cookies and web beacons (Please visit Section 2 of this Privacy Notice to
-						learn more about these technologies).
-						Web logging, which enables us to collect the standard information your browser sends to
-						every website you visit - such as your IP address, browser type and language, and the site
-						you came from - as well as the pages you visit and the links you click while using our sites
-						and services.
-						Software installed on your computer or other device, which may send back information
-						needed to operate, update or improve that software.
-						E-mails
-						Hard copy surveys or other documents
-						Customer Data:</p>
-
-						</p>OkTik receives and processes information (in paper and electronic form) in accordance with
-						its clients’ instructions for the purpose of providing services to its customers. At OkTik, we
-						recognize the importance of privacy to our customers, and we strive to safeguard any
-						personal information we receive and may need to use in support of our customers.</p>
-
-						</p>OkTik Customer Information</p>
-
-						</p>Customer Information is information we collect from you when you purchase and contract
-						with us to provide services or technology solutions. We will ask you to provide the following
-						information:</p>
-
-						</p>E-mail Address;</p>
-						</p>Phone Number;</p>
-						</p>Information regarding your role within your company;</p>
-						</p>Company information, including company name, address, billing information (e.g., P.O.
-						number, bank wire information, credit card number), and company size; and
-						Contact information for other relevant points of contact within your company as needed for
-						OkTik to provide its services.</p>
-
-						</p>If you purchased one of OkTik’s technical solutions, you may have the option to add
-						additional users to your account. We will ask for the name and e-mail address of the
-						additional users you want to add. This information is used by OkTik to provide the requested
-						service.</p>
-
-						</p>In the course of using OkTik’s technical solutions or services, you may provide business
-						information related to your company. Business information may include copies of your
-						company’s policies and process documents, responses to assessment questionnaires and
-						evidence to support those responses. This information is stored on OkTik’s systems and is
-						used to provide contracted services in accordance with the applicable terms and conditions
-						of agreements between OkTik and your company.</p>
-
-						</p>1.3 How We Use APIs:</p>
-						</p>OkTik products use and transfer data only using recommended methodologies and
-						Application Programming Interfaces (“APIs”) approved by Microsoft, Google, Salesforce, or
-						other platform technology providers. Our applications&#39; use of APIs adheres to the respective
-						user data policies of such platform technology providers, as applicable. For example, our
-						use of Google APIs adheres to the Google API Services User Data Policy (including
-						Google’s “Limited Use” requirements thereunder).</p>
-
-						</p>1.4 Third Party Websites</p>
-						</p>Please note that our sites may include links to third-party sites whose privacy practices may
-						differ from those of OkTik. If you submit personal information to any of those sites, your
-						information is governed by the privacy statements on those sites. We encourage you to
-						review the privacy statement of any site you visit.</p>
-
-						</p>2. Cookies, AI, &amp; Similar Technologies</p>
-						</p>2.1 Our Use of Cookies</p>
-						</p>Most OkTik websites use “cookies”, which are small pieces of data sent to your browser by a
-						web server. Upon subsequent requests, your browser will send the cookie data to the same
-						web server, or other web servers in the same domain, when accessing the website. Cookies
-						contain data that can be read by a web server in the domain that issued the cookie to you.
-						That data often consists of a string of numbers and letters that uniquely identifies your
-						computer but may contain other information as well. Here is an example of a unique ID
-						number stored in a cookie that OkTik might place on your device when you visit one of our
-						websites: 0aj17be34l7srju0qcdnftigt0</p>
-
-						</p>We May Use Cookies For:</p>
-
-						</p>Sign-in and Authentication</p>
-
-						</p>When you sign into a site or service using your account on an OkTik website, we store a
-						unique ID number, and the time you signed in, in an encrypted cookie on your hard disk.
-						This cookie allows you to move from page to page at the site without having to sign in again
-						on each page. When you sign out, these cookies are deleted from your computer. This is
-						commonly referred to as a “session cookie”. We also use cookies to improve the sign-in
-						experience. For example, your username may be stored in a cookie that will remain on your
-						computer after you sign out. This cookie allows your username to be pre-populated, so that
-						you will only need to type your password the next time you sign in. If you are using a public
-						computer or do not want this information to be stored, you can select the appropriate radio
-						button on the sign-in page, and this cookie will not be used.</p>
-
-						</p>Site Analytics</p>
-
-						</p>We may use cookies to count the number of unique visitors to a web page or service or to
-						develop other aggregate statistics about the operations of our sites and services. These
-						analytics help us operate and improve the performance of these sites and services.</p>
-
-						<p>In addition to the cookies OkTik may set when you visit our websites, third parties may also
-						set certain cookies on your device when you visit OkTik sites. In some cases, that is
-						because we have hired the third party to provide certain services on our behalf, such as site
-						analytics. In other cases, it is because our web pages contain content or ads from third
-						parties, such as videos, news content or ads delivered by other ad networks. Because your
-						browser connects to those third parties’ web servers to retrieve that content, those third
-						parties are able to set or read their own cookies on your device and may collect information
-						about your online activities across websites or online services.</p>
-
-						<p>2.2 How to Control Cookies</p>
-						<p>Browser Controls to Block Cookies</p>
-
-						<p>Most web browsers automatically accept cookies, but you can usually modify your browser
-						setting to block cookies. Instructions for blocking cookies in different browsers are usually
-						available at each browser’s privacy statement or in their help files or settings pages.</p>
-
-						<p>Please be aware that if you choose to block cookies, you may not be able to sign in or use
-						other interactive features of OkTik sites and services that depend on cookies.</p>
-
-						<p>Browser Controls to Delete Cookiesv</p>
-
-						<p>If you accept cookies, you can delete them later. Instructions for deleting cookies in different
-						browsers are usually available at each browser’s privacy statement or in their help files or
-						settings pages.</p>
-
-						<p>Please be aware that if you choose to delete cookies, any settings and preferences
-						controlled by those cookies will be deleted and may need to be recreated.</p>
-
-						<p>Browser Controls for “Do Not Track” and Tracking Protection</p>
-
-						<p>Some newer browsers have incorporated “Do Not Track” features. Most of these features,
-						when turned on, send a signal or preference to the websites you visit indicating that you do
-						not wish to be tracked. Those sites (or the third-party content on those sites) may continue to
-						engage in activities you might view as tracking even though you have expressed this
-						preference, depending on the sites’ privacy practices. Because there is not yet a common
-						understanding of how to interpret the Do Not Track signal, OkTik does not currently respond
-						to the browser Do Not Track signals on its own websites or online services, or on third-party
-						websites or online services where OkTik provides content or is otherwise able to collect
-						information.</p>
-
-						<p>2.3 Our Use of Web Beacons</p>
-						<p>OkTik web pages may contain electronic images known as web beacons - sometimes called
-						single pixel gifs - that may be used to help deliver cookies on our sites, let us count users
-						who have visited those pages and deliver co-branded services. We may include web
-						beacons in our promotional e-mail messages or newsletters to determine whether messages
-						have been opened and acted upon.</p>
-
-						<p>Finally, OkTik sites may contain web beacons from third parties to help us compile
-						aggregated statistics regarding the effectiveness of our promotional campaigns or other
-						website operations. These web beacons may allow the third parties to set or read a cookie
-						on your computer. These companies may collect information about your online activities
-						across websites or online servers, however, we prohibit third parties from using web
-						beacons on our sites to collect or access your personal information. You may be able to opt
-						out from data collection or use by these third-party analytics companies by opting out on
-						their respective websites.</p>
-
-						<p>2.4 Other Similar Technologies</p>
-						In addition to standard cookies and web beacons, websites can use other technologies to
-						store and read data files on your computer. This may be done to maintain your preferences
-						or to improve speed and performance by storing certain files locally. But, like standard</p>
-
-						<p>cookies, it can also be used to store a unique identifier for your computer, which can then be
-						used to track behavior.</p>
-
-						<p>2.5 Generative AI</p>
-						OkTik utilizes customer and partner-facing chatbots across our platform in generating
-						content and engage with users through chat bots. Please know that generative AI can make
-						mistakes and it is each user’s responsibility to ensure the accuracy of all content generated
-						by AI. Please refer to the applicable product’s terms of use, as applicable.</p>
-
-						<p>3. How We Use Your Personal Information</p>
-						<p>We will use your Customer Information to:</p>
-
-						<p>Provide the services and access to the technology solutions you have purchased
-						Renew subscription-based services</p>
-						<p>Communicate with you as necessary for your use of our products or services, for example,
-						informing you when a subscription is ending, letting you know when updates are available or
-						letting you know when you need to take action to keep your account active.
-						Provide customer support. While providing you with customer support we may also gather
-						additional information from you to investigate technical issues, and respond to your support
-						questions;</p>
-						<p>Contact you about a request of you for products or services, and to follow up with you about
-						the products and services in which you have expressed an interest;
-						Analyze the characteristics of our customers and improve our services. Occasionally, we will
-						provide anonymized aggregated statistics about our customers in reports made available to
-						our customers, to third parties, or to the public. These reports will not identify individual
-						OkTik customers.</p>
-						<p>Operate, improve, and personalize the products and services we offer. Information collected
-						through one OkTik service may be combined with information collected through other OkTik
-						services to give you a more consistent and personalized experience in your interactions with
-						us. We may also supplement this with information from other companies. For example, we
-						may use services from other companies to help us derive a general geographic area based
-						on your IP address in order to customize certain services to your geographic area.
-						Communicate regularly with you about your use of the software and service, OkTik events
-						and other industry or privacy-related news, and other OkTik services we believe may be of
-						interest to you – if the applicable laws allow it or if we have your express permission to do
-						so.</p>
-						<p>We will not use your Customer Information for automated decision making or profiling.
-						In the context of our recruitment process, we will use your Applicant Information to:</p>
-
-						<p>Communicate with you throughout the recruitment process</p>
-
-						<p>Manage your application and administer the recruitment process
-						Assess your skills, qualifications, interests and suitability for the considered job
-						In appropriate cases, inform you of other potential career opportunities at OkTik
-						Organize interviews, including where applicable travel arrangements and reimbursements
-						Verify your information and conduct reference and/or background checks (where applicable,
-						and as permitted by applicable laws)
-						Prepare an employment contract and onboard you if you are offered a job
-						Meet recordkeeping and internal and external reporting responsibilities
-						Comply with applicable laws, regulations, legal obligations and processes or enforceable
-						governmental requests, e.g. applicable immigration and visa laws and requirements
-						Improve our application or recruitment process
-						We do not solely rely on automated decision making for conducting our recruitment
-						activities.
-						4. Sharing or Disclosing Your Personal Information
-						OkTik transfers information to our corporate affiliates, service providers, and other partners
-						who process it for us, based on our instructions, and in compliance with this Privacy Notice
-						and any other appropriate confidentiality and security measures. Except as described in this
-						Privacy Notice we will not disclose your personal information to a third party without your
-						consent.</p>
-
-						<p>Contexts and situations where we may share or disclose your personal data (where lawful to
-						do so and for legitimate purposes) without your explicit consent are:</p>
-
-						<p>Within OkTik affiliates and subsidiaries</p>
-						<p>As part of a corporate transaction such as a merger or sale of a business
-						With partners, vendors, and agents of OkTik Specifically, we may share it with companies we
-						have hired to provide services globally on our behalf. Examples of these services include
-						customer support, information technology, payments
-						When required by law or to respond to legal process or lawful requests, including from law
-						enforcement or other government agencies or other public authorities, including to meet
-						national security or law enforcement requirements;
-						To protect the rights or property of OkTik or our customers, including enforcing the terms
-						governing your use of the services
-						When required to combat fraud or protect our reasonable interests; and
-						To act on a good faith belief that access, or disclosure is necessary to protect the personal
-						life and safety of OkTik employees, customers, or the public</p>
-
-						<p>Applicant Data may further be shared with HR services providers, insurance organizations,
-						governmental organizations or agencies, including law enforcement, external advisors (such
-						as legal advisors, accountants) or employee benefits providers
-						With your consent or if the applicable laws allow it, we may also share your personal
-						information with partners, vendors, and agents of OkTik for providing marketing assistance,
-						sales, data analysis, research, and surveys or, where applicable, when contacting job
-						referees that you provided to us in the context of a job application.</p>
-
-						<p>When we share information with these other companies or persons, they are not allowed to
-						use it for any other purpose and must keep it confidential.</p>
-
-						<p>Any requests for personal data access by authorities, including law enforcement or
-						intelligence agencies, are subject to a legal assessment by qualified personnel. OkTik will
-						inform data subjects or controllers (as applicable) whose data is affected by such requests
-						without undue delay. Access to or disclosure of personal information will only be granted if
-						OkTik&#39;s legal assessment has established that there is an applicable and legally valid basis
-						and that the request must be granted on that basis. Any access or disclosure will be limited
-						to the mandatory minimum. Further, OkTik will seek legal remedy against the request by any
-						means that have an acceptable prospect of success, including, where applicable, lawsuits or
-						measures of injunctive relief. OkTik will also reasonably cooperate in the data subject’ or
-						controller&#39;s (as applicable) own legal defense against the access request.</p>
-
-						<p>5. Accessing And Updating Your Personal Information</p>
-						<p>Some OkTik services or OkTik websites may give you the ability to access, correct or delete
-						your personal information online. To help prevent your personal information from being
-						viewed by others, you first might be required to sign in. The method(s) for accessing your
-						personal information will depend on which sites or services you have used.</p>
-
-						<p>You can also contact OkTik by using a provided contact form on the website, via e-mail to
-						privacy@OkTik.com or by using any of the communication methods set out in Section 14
-						below.</p>
-
-						<p>OkTik will make commercially reasonable efforts to provide you reasonable access to any of
-						your personal information we maintain within 30 days of your access request. We provide
-						this access so you can review, make corrections, or request deletion of your data. If we
-						cannot honor your request within the 30-day period, we will tell you when we will be able to
-						provide access. In the unlikely event that we cannot provide you access to this information;
-						we will explain why we cannot do so.</p>
-
-						<p>Please note that we may still use any aggregated and de-identified Personal Information that
-						does not identify any individual and may also retain and use your information as necessary
-						to comply with our legal obligations, resolve disputes, and enforce our agreements.</p>
-
-						<p>6. Children</p>
-						<p>When an OkTik site or service collects age information, it will either block users under 16 or
-						will ask them to provide consent from a parent or guardian before they can use it.</p>
-
-						<p>We will not knowingly ask children under 16 to provide more information than is necessary to
-						provide the service.</p>
-
-						<p>When consent is granted, the child&#39;s account is treated much like any other account. The
-						child may have access to communication services like e-mail, instant messaging and online
-						message boards and may be able to communicate freely with other users of all ages.</p>
-
-						<p>Parents/guardians can change or revoke the consent choices previously made, and review,
-						edit or request the deletion of their children&#39;s personal information by using the contact form
-						on the website.</p>
-
-						<p>7. Consent, Withdrawal of Consent and Communication Preferences
-						Consent and Withdrawals of Consent</p>
-
-						<p>You have choices regarding our collection, use or disclosure of your personal data. If you
-						choose not to provide us with the personal data described in this Notice, we may not be in a
-						position to process your required services. You have the right to withdraw your consent in
-						the manner described in this section.</p>
-
-						<p>If you wish to withdraw consent, you should give us reasonable advance notice. We will
-						advise you of the likely consequences of your withdrawal of consent, e.g. without your
-						personal contact information we may not be able to inform you of future services offered by
-						us.</p>
-
-						<p>Your request for withdrawal of consent can take the form of an e-mail or letter to us, by filling
-						out the “do not contact” form on our Website: Add Me to Do Not Contact List | OkTik, or
-						through the “unsubscribe” feature in an online service.</p>
-
-						<p>Promotional E-Mails</p>
-
-						<p>If you receive promotional e-mails from us and would like to stop getting them in the future,
-						you can do so by clicking the unsubscribe link provided in the e-mail.</p>
-
-						<p>Depending on the respective service, you may also have the option of proactively making
-						choices about the receipt of promotional e-mail, telephone calls, and postal mail from
-						particular OkTik sites or services by visiting and signing into the corresponding services
-						website.</p>
-
-						<p>These choices do not apply to the receipt of mandatory service communications that are
-						considered part of certain OkTik services and to privacy-related updates such as notification
-						of new or changes to existing privacy regulations, which you may receive periodically unless
-						you cancel the service.</p>
-
-						<p>8. International Users and Data Transfer</p>
-						<p>Personal information you submit to us may be transferred to the United States and other
-						countries to be processed by us or third parties in order to provide this website, our
-						technology solutions and services to you or for such other purposes as set forth in this
-						Privacy Notice.</p>
-
-						<p>OkTik will comply with all applicable laws with regard to these transfers. Additionally, the
-						following terms apply with regard to personal data of individuals from the respective regions:
-
-						<p>8.1 European Economic Area, United Kingdom, and Switzerland
-						Standard Contractual Clauses</p>
-
-						<p>For transfers of personal data between our entities in the European Union and other OkTik
-						entities, OkTik has entered into the EU Standard Contractual Clauses (“SCCs”) with all of its
-						affiliated companies in order to ensure an adequate level of protection of such personal data.
-						OkTik has also implemented the United Kingdom’s International Data Transfer Addendum to
-						the EU Standard Contractual Clauses. For details regarding the abovementioned transfers
-						and the safeguards that have been put in place please see our Transfer Impact Assessment
-						FAQs under https://cdn.OkTik.com/pdfs/en/OkTik-TIA-FAQs.pdf.</p>
-
-						<p>Ways To Resolve Disputes</p>
-
-						<p>If you are a resident of the EEA and have an unresolved privacy or personal information
-						collection, use, or disclosure concern that we have not addressed satisfactorily, please
-						contact the EU Data Protection Authorities. If you are a resident of Switzerland and have this
-						concern, please contact the Swiss Federal Data Protection and Information Commissioner.</p>
-
-						<p>For more information on how to contact the EU Data Protection Authorities, click here
-						(https://edpb.europa.eu/about-edpb/about-edpb/members_en).</p>
-
-						<p>For more information on how to contact the Swiss Federal Data Protection and Information
-						Commissioner, click here (https://www.edoeb.admin.ch/edoeb/en/home/the-
-						fdpic/contact.html).</p>
-
-						<p>8.2 United States of America</p>
-						<p>California, Colorado, Connecticut, Utah &amp; Virginia</p>
-
-						<p>The California Consumer Privacy Act of 2018 (“CCPA”) became effective on January 1, 2020
-						and created a variety of privacy rights for California consumers. In November 2020,
-						California amended the CCPA, effective January 1, 2023. Additional states have passed
-						laws extending similar privacy rights to their consumers, including Virginia (effective January
-						1, 2023), Colorado (effective July 1, 2023), Connecticut (July 1, 2023), and Utah (December
-						31, 2023). OkTik uses this Privacy Notice to make disclosures to you as required by these
-						state laws.</p>
-
-						<p>Please note that the rules implementing some of these laws have not yet been finalized. We
-						are continuously working to better comply with these laws, and we will update our
-						processes, disclosures, and this notice as these implementing rules are finalized.</p>
-
-						<p>Residents of these states are entitled to ask us for a notice identifying the categories of
-						Personal Information which we share with our affiliates and/or third parties for marketing
-						purposes, and for us to provide contact information for such affiliates and/or third parties.</p>
-
-						<p>Access</p>
-
-						<p>You have the right to know whether we process Customer Data about you, and if we do, to
-						access Customer Data we hold about you and certain information about how we use it and
-						who we share it with.</p>
-
-						<p>Where permitted by law, we reserve the right to charge a reasonable administrative fee for
-						this service. In exceptional circumstances, we may deny you access to your Customer Data
-						and may explain as required by applicable laws.</p>
-
-						<p>Exceptional circumstances include (to the extent allowable under applicable law) where:</p>
-
-						<p>an investigating authority or government institution objects to us complying with a customer’s
-						request</p>
-
-						<p>the information may, in the exercise of our reasonable discretion and/or assessment, affect
-						the life or security of an individual; and
-						data is collected in connection with an investigation of a breach of contract, suspicion of
-						fraudulent activities or contravention of law.</p>
-						Correction</p>
-
-						<p>You have the right to correct any Customer Data held about you that is inaccurate.</p>
-
-						<p>Feedback and Complaints</p>
-
-						<p>If you have any concerns, feedback, or complaints about the use and/or sharing of your
-						Customer Data, we are open to receiving your feedback or complaints.</p>
-
-						<p>Exercise of Rights</p>
-
-						<p>In order to process your request promptly, we kindly ask you to include the necessary
-						identification details with your request as well as any other information necessary to confirm
-						your identity or to process your request. Such information may include the following:</p>
-
-						<p>Full Name;</p>
-						<p>Mailing Address;</p>
-						<p>Email Address;</p>
-						<p>Contact Number; and</p>
-						<p>A copy of an official identity document (e.g. Identity Card or Passport information) with all
-						information apart from your full name and address redacted (if applicable).
-						All data privacy requests should be sent to accounts@OkTik.net. Please note that requests
-						sent in via other channels or which do not contain sufficient supporting information may take
-						longer to process and/or we may not be able to respond within the prescribed timelines.</p>
-
-						<p>9. Support Data</p>
-						<p>Support Data is the information we collect when you submit a support request or run an
-						automated troubleshooter, including information about hardware, software, and other details
-						related to the support incident, such as: contact or authentication information, chat session
-						personalization, information about the condition of the machine and the application from
-						when the fault occurred and during diagnostics, system and registry data about software
-						installations and hardware configurations, and error- tracking files. We use Support Data as
-						described in this Privacy Notice, and additionally use it to resolve your support incident and
-						for training purposes.</p>
-
-						<p>Support may be provided through phone, e-mail, or online chat. We may use remote access
-						(“RA”), with your permission, to temporarily navigate your desktop. Phone conversations,
-						online chat sessions, or RA sessions with support professionals may be recorded and/or
-						monitored. For RA, you may also access the recording after your session For online chat or
-						RA, you may end a session at any time of your choosing.</p>
-
-						<p>Following a support incident, we may send you a survey about your experience and
-						offerings. You must opt-out of support surveys separately from other communications
-						provided by OkTik, by contacting support or through the e-mail footer.</p>
-
-						<p>To review and edit your personal information collected through our support services, please
-						contact us by using our web form.</p>
-
-						<p>Some business customers may purchase enhanced support offerings. These offerings are
-						covered by their own contract terms and notices.</p>
-
-						<p>10. Payment Data</p>
-						<p>Payment Data is the information that you provide when you make purchases. This may
-						include your payment instrument number (e.g., credit card, PayPal), your name and billing
-						address, and the security code associated with your payment instrument (e.g., the CSV or
-						CVV). This section provides additional information regarding the collection and use of your
-						payment information.</p>
-
-						<p>Payment Data is used to complete your transaction, as well as for the detection and
-						prevention of fraud. In support of these uses, OkTik may share your Payment Data with
-						banks and other entities that process payment transactions or other financial services, and
-						for fraud prevention and credit risk reduction.</p>
-
-						<p>When you provide Payment Data to us, we may store that data to help you complete future
-						transactions.</p>
-
-						<p>You may remove the payment instrument information associated with your organizational
-						account by contacting us. After you close your account or remove a payment instrument,
-						however, OkTik may retain your payment instrument data for as long as reasonably
-						necessary to complete your existing transaction, to comply with OkTik’s legal and reporting
-						requirements, and for the detection and prevention of fraud.</p>
-
-						<p>11. Handling of Unrequested, Accidentally Provided, and Ancillary Personal Data</p>
-
-						<p>OkTik recognizes that, in certain instances, it may receive personal data that was not
-						actively requested, was provided accidentally, or was transmitted incidentally as part of other
-						information (collectively “Unsolicited Personal Data”. This section explains how OkTik
-						handles such Unsolicited Personal Data.</p>
-
-						<p>11.1 Types of Unsolicited Personal Data</p>
-
-						<p>Unrequested personal data refers to information sent to OkTik without prior facilitation or
-						request, whether directly from the data subject or a third party. Examples include personal
-						data contained in unsolicited messages, resumes, or other communications.
-						Accidentally provided personal data refers to information transmitted to OkTik inadvertently,
-						such as through an e-mail sent to an incorrect recipient.
-						Ancillary personal data refers to information not directly intended for OkTik’s use but
-						included as part of other communications or documentation (e.g., information within an e-
-						mail thread contained in the body of a forwarded message).</p>
-
-						<p>11.2 Handling of Unsolicited Personal Data</p>
-
-						<p>Assessment and Processing: Upon receipt, OkTik assesses Unsolicited Personal Data to
-						determine whether it is necessary for its legitimate business purposes. If not, OkTik will
-						securely delete or anonymize the data, unless retention or other processing is required by
-						law, for the establishment, exercise, or defense of legal claims, to address a risk to the rights
-						and freedoms of the data subject, or under another legal basis.
-						Notification: Where feasible and appropriate, OkTik will notify the data subject of its receipt
-						of Unsolicited Personal Data and inform them of its disposition.
-						Restriction of Processing: Any further processing of Unsolicited Personal Data will only be
-						based on a lawful basis, such as consent or legitimate interest.
-						Purpose Limitation: Relevant Unsolicited Personal Data that was purposefully sent to OkTik
-						will be processed only for the specific purpose for which it was transmitted and in
-						accordance with the applicable lawful basis.
-						Privacy and Security Measures: OkTik will ensure that Unsolicited Personal Data is treated
-						with the same level of confidentiality and security as any other personal data it processes.
-						12. Protecting the Security of Personal Information
-						OkTik is committed to protecting the security of your personal information. We use a variety
-						of security technologies and procedures to help protect your personal information from
-						unauthorized access, use or disclosure. For example, we store the personal information you
-						provide on computer systems that have limited access and are in controlled facilities.</p>
-
-						<p>When we transmit highly confidential information (such as a credit card number or password)
-						over the Internet, we protect it through the use of encryption, such as the Transport Layer
-						Security or Secure Socket Layer protocols.</p>
-
-						<p>If a password is used to help protect your accounts and personal information, it is your
-						responsibility to keep your password confidential. Do not share it. If you are sharing a
-						computer, you should always log out before leaving a site or service to protect access to
-						your information from subsequent users.</p>
-
-						<p>OkTik has received ISO 27001:2022 certification with respect to secure software
-						development and maintenance process including support business functions like Infosec, IT,
-						HR, Sales and Marketing, Project Management, Operations and Call Center.</p>
-
-						<p>For more information about Data Protection, Privacy and Security at OkTik, please visit
-						https://www.OkTik.com/company/trust-center.</p>
-
-						<p>13. Where Information is Stored and Processed
-						Personal information collected on OkTik sites and services may be stored and processed in
-						the United States or any other country where OkTik or its affiliates, subsidiaries or service
-						providers maintain facilities. We take steps to ensure that the data we collect under this
-						Privacy Notice is processed according to the provisions of this statement and the
-						requirements of applicable law wherever the data is located.</p>
-
-						<p>OkTik may retain your personal information for a variety of reasons, such as to comply with
-						our legal obligations, resolve disputes, enforce our agreements, and as long as necessary to
-						fulfill the purposes for which the personal data was collected, as documented in our
-						corporate data retention policy. To learn how to access your personal information, visit
-						section 5 (Accessing And Updating Your Personal Information).</p>
-
-						<p>14. How Can I Contact OkTik Or Exercise My Data Subject Rights?
-						If you have a technical or general support question, please visit https://www.OkTik.com/ to
-						learn more about OkTik’s support offerings.</p>
-
-						<p>If you have a general privacy question, or a question with regard to this Privacy Notice, or to
-						exercise your data subject rights under applicable data protection laws, you may contact
-						OkTik:</p>
-
-						<p>by e-mail to: accounts@oktik.net;</p>
-						<p>To find the OkTik subsidiary in your country or region, see https://www.OkTik.net.</p>
-
-						<p>15. Changes to Our Privacy Notice</p>
-						We will occasionally update this Privacy Notice to reflect customer feedback and changes in
-						our services. When we post changes to the Privacy Notice, we will revise the &quot;Revision
-						History” below. If there are material changes to the Privacy Notice regarding how OkTik will
-						use your personal information, we will notify you either by prominently posting a notice of
-						such changes before they take effect or by directly sending you a notification. We encourage
-						you to periodically review the Privacy Notice to learn how OkTik is protecting your
-						information when using our products and services.</p>
+	<!-- Loading overlay -->
+	<div class="loading-overlay">
+		<div class="loading-spinner"></div>
+	</div>
+	<header>
+		<div class="header-container">
+			<a href="/" class="logo"><img src="../photos/logo/OKTik Logo Final_OKTik Blue Logo.png" alt=""
+					style="float:left;"></a>
+			<button class="mobile-menu-btn" id="mobileMenuBtn">
+				<i class="fas fa-bars"></i>
+			</button>
+			<nav class="nav-menu" id="nav-menu">
+				<a href="/" class="nav-link active home_to">Home</a>
+				<a href="/" class="nav-link">About</a>
+				<a href="/" class="nav-link">Products</a>
+				<a href="/" class="nav-link">Services</a>
+				<a href="/" class="nav-link">User experience</a>
+				<a href="/" class="nav-link">Media and partners</a>
+				<a href="/" class="nav-link">Case studies</a>
+				<a href="/" class="nav-link">Contact us</a>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<section class="section">
+			<div class="container ">
+				<div class="row">
+					<div class="col">
+						<p>
+							OkTik Technology including its wholly owned (directly and indirectly) subsidiaries
+							(hereinafter
+							“OkTiK”) is committed to protecting the privacy and security of the personal information of
+							our customers, employees and third parties.
+						</p>
+						<>
+							We respect each individual&#39;s right to personal privacy. We will collect and use
+							information we
+							receive directly from you only in the ways disclosed in this Privacy Notice. This Privacy
+							Notice does not apply to practices that OkTik does not own or control, or to individuals
+							that
+							OkTik does not employ or manage.
+							</p>
+							<p>1. Information We Collect</p>
+							</p>OkTik collects many kinds of information in order to operate effectively and provide you
+							the
+							best products, services, and experiences we can. Some of this information you provide
+							directly to us. Some of it we get by observing how you interact with our products and
+							services. Some of it is available from other sources that we may combine with the data we
+							collect directly. Regardless of the source, we believe it is important to treat that
+							information
+							with care and to help you maintain your privacy.</p>
+
+							</p>1.1 What we collect</p>
+							</p>Registration</p>
+
+							</p>When you sign up to use our sites or services you may be required to provide information
+							about yourself, such as your name, birthdate, organization name, e-mail and postal address
+							and postal code.</p>
+
+							</p>Signing In</p>
+
+							</p>To access some OkTik services, you will need to sign in with a username and password,
+							which we refer to as your user account.</p>
+
+							</p>Using Our Sites And Services</p>
+
+							</p>We collect information that tells us how you interact with our services, including the
+							browser
+							you&#39;re using, your IP address, location, cookies or other unique IDs, the pages you
+							visit and
+							features you use.</p>
+
+							</p>Product and Services Queries</p>
+
+							</p>If you request information about OkTik products and services, we will collect your name,
+							e-
+							mail address, phone number, and additional company information.</p>
+
+							</p>Data From Other Sources</p>
+
+							</p>We may get additional information about you, such as demographic data we purchase from
+							other companies.</p>
+
+							</p>CCTV and Security Systemsv
+
+							</p>If you visit one of our offices, we may collect information captured on security systems
+							that
+							are implemented there, including CCTV and key card entry systems and other security and
+							technology systems, to the extent permitted by applicable law.</p>
+
+							</p>Applicant and Candidate Data</p>
+
+							</p>In the context of career opportunities at OkTik, we may process and use certain
+							information
+							(“Applicant Data”) you share with us and/or which we may collect or create during the
+							application or recruitment process, including:</p>
+
+							</p>Contact information, such as your name, address, e-mail address or phone number;
+							Details related to your work experience, such as your CV or resume, cover letter, previous
+							and/or relevant work experience, qualifications or other information provided to us in the
+							context of your application;
+							Information about the type of employment you are looking for or may be interested in,
+							including current and/or desired salary and other terms relating to compensation and
+							benefits and other job preferences;
+							Information from job interviews and/or assessments that you may have had with us
+							Details of how you heard about the position you are applying for
+							Reference information and/or information received from background checks (if applicable for
+							the position you have applied for, and as permitted by applicable laws), including
+							information
+							provided by third parties;
+							Information from publicly available sources that we believe is relevant for the hiring
+							process,
+							e.g. your LinkedIn profile;
+							Other information provided by you in the hiring process.
+							Please note that you may only share with us personal information of third parties if you
+							have
+							obtained it in accordance with applicable data protection laws and have received all
+							necessary authorizations and consents.</p>
+
+							</p>1.2 How We Collect Information:
+							</p>We use a number of methods and technologies to gather information about how you use our
+							sites and services or otherwise interact with us, such as:</p>
+
+							</p>Web forms, such as when you type information into a registration or application form or
+							type
+							a search query into a search box.
+							Technologies like cookies and web beacons (Please visit Section 2 of this Privacy Notice to
+							learn more about these technologies).
+							Web logging, which enables us to collect the standard information your browser sends to
+							every website you visit - such as your IP address, browser type and language, and the site
+							you came from - as well as the pages you visit and the links you click while using our sites
+							and services.
+							Software installed on your computer or other device, which may send back information
+							needed to operate, update or improve that software.
+							E-mails
+							Hard copy surveys or other documents
+							Customer Data:</p>
+
+							</p>OkTik receives and processes information (in paper and electronic form) in accordance
+							with
+							its clients’ instructions for the purpose of providing services to its customers. At OkTik,
+							we
+							recognize the importance of privacy to our customers, and we strive to safeguard any
+							personal information we receive and may need to use in support of our customers.</p>
+
+							</p>OkTik Customer Information</p>
+
+							</p>Customer Information is information we collect from you when you purchase and contract
+							with us to provide services or technology solutions. We will ask you to provide the
+							following
+							information:</p>
+
+							</p>E-mail Address;</p>
+							</p>Phone Number;</p>
+							</p>Information regarding your role within your company;</p>
+							</p>Company information, including company name, address, billing information (e.g., P.O.
+							number, bank wire information, credit card number), and company size; and
+							Contact information for other relevant points of contact within your company as needed for
+							OkTik to provide its services.</p>
+
+							</p>If you purchased one of OkTik’s technical solutions, you may have the option to add
+							additional users to your account. We will ask for the name and e-mail address of the
+							additional users you want to add. This information is used by OkTik to provide the requested
+							service.</p>
+
+							</p>In the course of using OkTik’s technical solutions or services, you may provide business
+							information related to your company. Business information may include copies of your
+							company’s policies and process documents, responses to assessment questionnaires and
+							evidence to support those responses. This information is stored on OkTik’s systems and is
+							used to provide contracted services in accordance with the applicable terms and conditions
+							of agreements between OkTik and your company.</p>
+
+							</p>1.3 How We Use APIs:</p>
+							</p>OkTik products use and transfer data only using recommended methodologies and
+							Application Programming Interfaces (“APIs”) approved by Microsoft, Google, Salesforce, or
+							other platform technology providers. Our applications&#39; use of APIs adheres to the
+							respective
+							user data policies of such platform technology providers, as applicable. For example, our
+							use of Google APIs adheres to the Google API Services User Data Policy (including
+							Google’s “Limited Use” requirements thereunder).</p>
+
+							</p>1.4 Third Party Websites</p>
+							</p>Please note that our sites may include links to third-party sites whose privacy
+							practices may
+							differ from those of OkTik. If you submit personal information to any of those sites, your
+							information is governed by the privacy statements on those sites. We encourage you to
+							review the privacy statement of any site you visit.</p>
+
+							</p>2. Cookies, AI, &amp; Similar Technologies</p>
+							</p>2.1 Our Use of Cookies</p>
+							</p>Most OkTik websites use “cookies”, which are small pieces of data sent to your browser
+							by a
+							web server. Upon subsequent requests, your browser will send the cookie data to the same
+							web server, or other web servers in the same domain, when accessing the website. Cookies
+							contain data that can be read by a web server in the domain that issued the cookie to you.
+							That data often consists of a string of numbers and letters that uniquely identifies your
+							computer but may contain other information as well. Here is an example of a unique ID
+							number stored in a cookie that OkTik might place on your device when you visit one of our
+							websites: 0aj17be34l7srju0qcdnftigt0</p>
+
+							</p>We May Use Cookies For:</p>
+
+							</p>Sign-in and Authentication</p>
+
+							</p>When you sign into a site or service using your account on an OkTik website, we store a
+							unique ID number, and the time you signed in, in an encrypted cookie on your hard disk.
+							This cookie allows you to move from page to page at the site without having to sign in again
+							on each page. When you sign out, these cookies are deleted from your computer. This is
+							commonly referred to as a “session cookie”. We also use cookies to improve the sign-in
+							experience. For example, your username may be stored in a cookie that will remain on your
+							computer after you sign out. This cookie allows your username to be pre-populated, so that
+							you will only need to type your password the next time you sign in. If you are using a
+							public
+							computer or do not want this information to be stored, you can select the appropriate radio
+							button on the sign-in page, and this cookie will not be used.</p>
+
+							</p>Site Analytics</p>
+
+							</p>We may use cookies to count the number of unique visitors to a web page or service or to
+							develop other aggregate statistics about the operations of our sites and services. These
+							analytics help us operate and improve the performance of these sites and services.</p>
+
+							<p>In addition to the cookies OkTik may set when you visit our websites, third parties may
+								also
+								set certain cookies on your device when you visit OkTik sites. In some cases, that is
+								because we have hired the third party to provide certain services on our behalf, such as
+								site
+								analytics. In other cases, it is because our web pages contain content or ads from third
+								parties, such as videos, news content or ads delivered by other ad networks. Because
+								your
+								browser connects to those third parties’ web servers to retrieve that content, those
+								third
+								parties are able to set or read their own cookies on your device and may collect
+								information
+								about your online activities across websites or online services.</p>
+
+							<p>2.2 How to Control Cookies</p>
+							<p>Browser Controls to Block Cookies</p>
+
+							<p>Most web browsers automatically accept cookies, but you can usually modify your browser
+								setting to block cookies. Instructions for blocking cookies in different browsers are
+								usually
+								available at each browser’s privacy statement or in their help files or settings pages.
+							</p>
+
+							<p>Please be aware that if you choose to block cookies, you may not be able to sign in or
+								use
+								other interactive features of OkTik sites and services that depend on cookies.</p>
+
+							<p>Browser Controls to Delete Cookiesv</p>
+
+							<p>If you accept cookies, you can delete them later. Instructions for deleting cookies in
+								different
+								browsers are usually available at each browser’s privacy statement or in their help
+								files or
+								settings pages.</p>
+
+							<p>Please be aware that if you choose to delete cookies, any settings and preferences
+								controlled by those cookies will be deleted and may need to be recreated.</p>
+
+							<p>Browser Controls for “Do Not Track” and Tracking Protection</p>
+
+							<p>Some newer browsers have incorporated “Do Not Track” features. Most of these features,
+								when turned on, send a signal or preference to the websites you visit indicating that
+								you do
+								not wish to be tracked. Those sites (or the third-party content on those sites) may
+								continue to
+								engage in activities you might view as tracking even though you have expressed this
+								preference, depending on the sites’ privacy practices. Because there is not yet a common
+								understanding of how to interpret the Do Not Track signal, OkTik does not currently
+								respond
+								to the browser Do Not Track signals on its own websites or online services, or on
+								third-party
+								websites or online services where OkTik provides content or is otherwise able to collect
+								information.</p>
+
+							<p>2.3 Our Use of Web Beacons</p>
+							<p>OkTik web pages may contain electronic images known as web beacons - sometimes called
+								single pixel gifs - that may be used to help deliver cookies on our sites, let us count
+								users
+								who have visited those pages and deliver co-branded services. We may include web
+								beacons in our promotional e-mail messages or newsletters to determine whether messages
+								have been opened and acted upon.</p>
+
+							<p>Finally, OkTik sites may contain web beacons from third parties to help us compile
+								aggregated statistics regarding the effectiveness of our promotional campaigns or other
+								website operations. These web beacons may allow the third parties to set or read a
+								cookie
+								on your computer. These companies may collect information about your online activities
+								across websites or online servers, however, we prohibit third parties from using web
+								beacons on our sites to collect or access your personal information. You may be able to
+								opt
+								out from data collection or use by these third-party analytics companies by opting out
+								on
+								their respective websites.</p>
+
+							<p>2.4 Other Similar Technologies</p>
+							In addition to standard cookies and web beacons, websites can use other technologies to
+							store and read data files on your computer. This may be done to maintain your preferences
+							or to improve speed and performance by storing certain files locally. But, like standard</p>
+
+							<p>cookies, it can also be used to store a unique identifier for your computer, which can
+								then be
+								used to track behavior.</p>
+
+							<p>2.5 Generative AI</p>
+							OkTik utilizes customer and partner-facing chatbots across our platform in generating
+							content and engage with users through chat bots. Please know that generative AI can make
+							mistakes and it is each user’s responsibility to ensure the accuracy of all content
+							generated
+							by AI. Please refer to the applicable product’s terms of use, as applicable.</p>
+
+							<p>3. How We Use Your Personal Information</p>
+							<p>We will use your Customer Information to:</p>
+
+							<p>Provide the services and access to the technology solutions you have purchased
+								Renew subscription-based services</p>
+							<p>Communicate with you as necessary for your use of our products or services, for example,
+								informing you when a subscription is ending, letting you know when updates are available
+								or
+								letting you know when you need to take action to keep your account active.
+								Provide customer support. While providing you with customer support we may also gather
+								additional information from you to investigate technical issues, and respond to your
+								support
+								questions;</p>
+							<p>Contact you about a request of you for products or services, and to follow up with you
+								about
+								the products and services in which you have expressed an interest;
+								Analyze the characteristics of our customers and improve our services. Occasionally, we
+								will
+								provide anonymized aggregated statistics about our customers in reports made available
+								to
+								our customers, to third parties, or to the public. These reports will not identify
+								individual
+								OkTik customers.</p>
+							<p>Operate, improve, and personalize the products and services we offer. Information
+								collected
+								through one OkTik service may be combined with information collected through other OkTik
+								services to give you a more consistent and personalized experience in your interactions
+								with
+								us. We may also supplement this with information from other companies. For example, we
+								may use services from other companies to help us derive a general geographic area based
+								on your IP address in order to customize certain services to your geographic area.
+								Communicate regularly with you about your use of the software and service, OkTik events
+								and other industry or privacy-related news, and other OkTik services we believe may be
+								of
+								interest to you – if the applicable laws allow it or if we have your express permission
+								to do
+								so.</p>
+							<p>We will not use your Customer Information for automated decision making or profiling.
+								In the context of our recruitment process, we will use your Applicant Information to:
+							</p>
+
+							<p>Communicate with you throughout the recruitment process</p>
+
+							<p>Manage your application and administer the recruitment process
+								Assess your skills, qualifications, interests and suitability for the considered job
+								In appropriate cases, inform you of other potential career opportunities at OkTik
+								Organize interviews, including where applicable travel arrangements and reimbursements
+								Verify your information and conduct reference and/or background checks (where
+								applicable,
+								and as permitted by applicable laws)
+								Prepare an employment contract and onboard you if you are offered a job
+								Meet recordkeeping and internal and external reporting responsibilities
+								Comply with applicable laws, regulations, legal obligations and processes or enforceable
+								governmental requests, e.g. applicable immigration and visa laws and requirements
+								Improve our application or recruitment process
+								We do not solely rely on automated decision making for conducting our recruitment
+								activities.
+								4. Sharing or Disclosing Your Personal Information
+								OkTik transfers information to our corporate affiliates, service providers, and other
+								partners
+								who process it for us, based on our instructions, and in compliance with this Privacy
+								Notice
+								and any other appropriate confidentiality and security measures. Except as described in
+								this
+								Privacy Notice we will not disclose your personal information to a third party without
+								your
+								consent.</p>
+
+							<p>Contexts and situations where we may share or disclose your personal data (where lawful
+								to
+								do so and for legitimate purposes) without your explicit consent are:</p>
+
+							<p>Within OkTik affiliates and subsidiaries</p>
+							<p>As part of a corporate transaction such as a merger or sale of a business
+								With partners, vendors, and agents of OkTik Specifically, we may share it with companies
+								we
+								have hired to provide services globally on our behalf. Examples of these services
+								include
+								customer support, information technology, payments
+								When required by law or to respond to legal process or lawful requests, including from
+								law
+								enforcement or other government agencies or other public authorities, including to meet
+								national security or law enforcement requirements;
+								To protect the rights or property of OkTik or our customers, including enforcing the
+								terms
+								governing your use of the services
+								When required to combat fraud or protect our reasonable interests; and
+								To act on a good faith belief that access, or disclosure is necessary to protect the
+								personal
+								life and safety of OkTik employees, customers, or the public</p>
+
+							<p>Applicant Data may further be shared with HR services providers, insurance organizations,
+								governmental organizations or agencies, including law enforcement, external advisors
+								(such
+								as legal advisors, accountants) or employee benefits providers
+								With your consent or if the applicable laws allow it, we may also share your personal
+								information with partners, vendors, and agents of OkTik for providing marketing
+								assistance,
+								sales, data analysis, research, and surveys or, where applicable, when contacting job
+								referees that you provided to us in the context of a job application.</p>
+
+							<p>When we share information with these other companies or persons, they are not allowed to
+								use it for any other purpose and must keep it confidential.</p>
+
+							<p>Any requests for personal data access by authorities, including law enforcement or
+								intelligence agencies, are subject to a legal assessment by qualified personnel. OkTik
+								will
+								inform data subjects or controllers (as applicable) whose data is affected by such
+								requests
+								without undue delay. Access to or disclosure of personal information will only be
+								granted if
+								OkTik&#39;s legal assessment has established that there is an applicable and legally
+								valid basis
+								and that the request must be granted on that basis. Any access or disclosure will be
+								limited
+								to the mandatory minimum. Further, OkTik will seek legal remedy against the request by
+								any
+								means that have an acceptable prospect of success, including, where applicable, lawsuits
+								or
+								measures of injunctive relief. OkTik will also reasonably cooperate in the data subject’
+								or
+								controller&#39;s (as applicable) own legal defense against the access request.</p>
+
+							<p>5. Accessing And Updating Your Personal Information</p>
+							<p>Some OkTik services or OkTik websites may give you the ability to access, correct or
+								delete
+								your personal information online. To help prevent your personal information from being
+								viewed by others, you first might be required to sign in. The method(s) for accessing
+								your
+								personal information will depend on which sites or services you have used.</p>
+
+							<p>You can also contact OkTik by using a provided contact form on the website, via e-mail to
+								privacy@OkTik.com or by using any of the communication methods set out in Section 14
+								below.</p>
+
+							<p>OkTik will make commercially reasonable efforts to provide you reasonable access to any
+								of
+								your personal information we maintain within 30 days of your access request. We provide
+								this access so you can review, make corrections, or request deletion of your data. If we
+								cannot honor your request within the 30-day period, we will tell you when we will be
+								able to
+								provide access. In the unlikely event that we cannot provide you access to this
+								information;
+								we will explain why we cannot do so.</p>
+
+							<p>Please note that we may still use any aggregated and de-identified Personal Information
+								that
+								does not identify any individual and may also retain and use your information as
+								necessary
+								to comply with our legal obligations, resolve disputes, and enforce our agreements.</p>
+
+							<p>6. Children</p>
+							<p>When an OkTik site or service collects age information, it will either block users under
+								16 or
+								will ask them to provide consent from a parent or guardian before they can use it.</p>
+
+							<p>We will not knowingly ask children under 16 to provide more information than is necessary
+								to
+								provide the service.</p>
+
+							<p>When consent is granted, the child&#39;s account is treated much like any other account.
+								The
+								child may have access to communication services like e-mail, instant messaging and
+								online
+								message boards and may be able to communicate freely with other users of all ages.</p>
+
+							<p>Parents/guardians can change or revoke the consent choices previously made, and review,
+								edit or request the deletion of their children&#39;s personal information by using the
+								contact form
+								on the website.</p>
+
+							<p>7. Consent, Withdrawal of Consent and Communication Preferences
+								Consent and Withdrawals of Consent</p>
+
+							<p>You have choices regarding our collection, use or disclosure of your personal data. If
+								you
+								choose not to provide us with the personal data described in this Notice, we may not be
+								in a
+								position to process your required services. You have the right to withdraw your consent
+								in
+								the manner described in this section.</p>
+
+							<p>If you wish to withdraw consent, you should give us reasonable advance notice. We will
+								advise you of the likely consequences of your withdrawal of consent, e.g. without your
+								personal contact information we may not be able to inform you of future services offered
+								by
+								us.</p>
+
+							<p>Your request for withdrawal of consent can take the form of an e-mail or letter to us, by
+								filling
+								out the “do not contact” form on our Website: Add Me to Do Not Contact List | OkTik, or
+								through the “unsubscribe” feature in an online service.</p>
+
+							<p>Promotional E-Mails</p>
+
+							<p>If you receive promotional e-mails from us and would like to stop getting them in the
+								future,
+								you can do so by clicking the unsubscribe link provided in the e-mail.</p>
+
+							<p>Depending on the respective service, you may also have the option of proactively making
+								choices about the receipt of promotional e-mail, telephone calls, and postal mail from
+								particular OkTik sites or services by visiting and signing into the corresponding
+								services
+								website.</p>
+
+							<p>These choices do not apply to the receipt of mandatory service communications that are
+								considered part of certain OkTik services and to privacy-related updates such as
+								notification
+								of new or changes to existing privacy regulations, which you may receive periodically
+								unless
+								you cancel the service.</p>
+
+							<p>8. International Users and Data Transfer</p>
+							<p>Personal information you submit to us may be transferred to the United States and other
+								countries to be processed by us or third parties in order to provide this website, our
+								technology solutions and services to you or for such other purposes as set forth in this
+								Privacy Notice.</p>
+
+							<p>OkTik will comply with all applicable laws with regard to these transfers. Additionally,
+								the
+								following terms apply with regard to personal data of individuals from the respective
+								regions:
+
+							<p>8.1 European Economic Area, United Kingdom, and Switzerland
+								Standard Contractual Clauses</p>
+
+							<p>For transfers of personal data between our entities in the European Union and other OkTik
+								entities, OkTik has entered into the EU Standard Contractual Clauses (“SCCs”) with all
+								of its
+								affiliated companies in order to ensure an adequate level of protection of such personal
+								data.
+								OkTik has also implemented the United Kingdom’s International Data Transfer Addendum to
+								the EU Standard Contractual Clauses. For details regarding the abovementioned transfers
+								and the safeguards that have been put in place please see our Transfer Impact Assessment
+								FAQs under https://cdn.OkTik.com/pdfs/en/OkTik-TIA-FAQs.pdf.</p>
+
+							<p>Ways To Resolve Disputes</p>
+
+							<p>If you are a resident of the EEA and have an unresolved privacy or personal information
+								collection, use, or disclosure concern that we have not addressed satisfactorily, please
+								contact the EU Data Protection Authorities. If you are a resident of Switzerland and
+								have this
+								concern, please contact the Swiss Federal Data Protection and Information Commissioner.
+							</p>
+
+							<p>For more information on how to contact the EU Data Protection Authorities, click here
+								(https://edpb.europa.eu/about-edpb/about-edpb/members_en).</p>
+
+							<p>For more information on how to contact the Swiss Federal Data Protection and Information
+								Commissioner, click here (https://www.edoeb.admin.ch/edoeb/en/home/the-
+								fdpic/contact.html).</p>
+
+							<p>8.2 United States of America</p>
+							<p>California, Colorado, Connecticut, Utah &amp; Virginia</p>
+
+							<p>The California Consumer Privacy Act of 2018 (“CCPA”) became effective on January 1, 2020
+								and created a variety of privacy rights for California consumers. In November 2020,
+								California amended the CCPA, effective January 1, 2023. Additional states have passed
+								laws extending similar privacy rights to their consumers, including Virginia (effective
+								January
+								1, 2023), Colorado (effective July 1, 2023), Connecticut (July 1, 2023), and Utah
+								(December
+								31, 2023). OkTik uses this Privacy Notice to make disclosures to you as required by
+								these
+								state laws.</p>
+
+							<p>Please note that the rules implementing some of these laws have not yet been finalized.
+								We
+								are continuously working to better comply with these laws, and we will update our
+								processes, disclosures, and this notice as these implementing rules are finalized.</p>
+
+							<p>Residents of these states are entitled to ask us for a notice identifying the categories
+								of
+								Personal Information which we share with our affiliates and/or third parties for
+								marketing
+								purposes, and for us to provide contact information for such affiliates and/or third
+								parties.</p>
+
+							<p>Access</p>
+
+							<p>You have the right to know whether we process Customer Data about you, and if we do, to
+								access Customer Data we hold about you and certain information about how we use it and
+								who we share it with.</p>
+
+							<p>Where permitted by law, we reserve the right to charge a reasonable administrative fee
+								for
+								this service. In exceptional circumstances, we may deny you access to your Customer Data
+								and may explain as required by applicable laws.</p>
+
+							<p>Exceptional circumstances include (to the extent allowable under applicable law) where:
+							</p>
+
+							<p>an investigating authority or government institution objects to us complying with a
+								customer’s
+								request</p>
+
+							<p>the information may, in the exercise of our reasonable discretion and/or assessment,
+								affect
+								the life or security of an individual; and
+								data is collected in connection with an investigation of a breach of contract, suspicion
+								of
+								fraudulent activities or contravention of law.</p>
+							Correction</p>
+
+							<p>You have the right to correct any Customer Data held about you that is inaccurate.</p>
+
+							<p>Feedback and Complaints</p>
+
+							<p>If you have any concerns, feedback, or complaints about the use and/or sharing of your
+								Customer Data, we are open to receiving your feedback or complaints.</p>
+
+							<p>Exercise of Rights</p>
+
+							<p>In order to process your request promptly, we kindly ask you to include the necessary
+								identification details with your request as well as any other information necessary to
+								confirm
+								your identity or to process your request. Such information may include the following:
+							</p>
+
+							<p>Full Name;</p>
+							<p>Mailing Address;</p>
+							<p>Email Address;</p>
+							<p>Contact Number; and</p>
+							<p>A copy of an official identity document (e.g. Identity Card or Passport information) with
+								all
+								information apart from your full name and address redacted (if applicable).
+								All data privacy requests should be sent to accounts@OkTik.net. Please note that
+								requests
+								sent in via other channels or which do not contain sufficient supporting information may
+								take
+								longer to process and/or we may not be able to respond within the prescribed timelines.
+							</p>
+
+							<p>9. Support Data</p>
+							<p>Support Data is the information we collect when you submit a support request or run an
+								automated troubleshooter, including information about hardware, software, and other
+								details
+								related to the support incident, such as: contact or authentication information, chat
+								session
+								personalization, information about the condition of the machine and the application from
+								when the fault occurred and during diagnostics, system and registry data about software
+								installations and hardware configurations, and error- tracking files. We use Support
+								Data as
+								described in this Privacy Notice, and additionally use it to resolve your support
+								incident and
+								for training purposes.</p>
+
+							<p>Support may be provided through phone, e-mail, or online chat. We may use remote access
+								(“RA”), with your permission, to temporarily navigate your desktop. Phone conversations,
+								online chat sessions, or RA sessions with support professionals may be recorded and/or
+								monitored. For RA, you may also access the recording after your session For online chat
+								or
+								RA, you may end a session at any time of your choosing.</p>
+
+							<p>Following a support incident, we may send you a survey about your experience and
+								offerings. You must opt-out of support surveys separately from other communications
+								provided by OkTik, by contacting support or through the e-mail footer.</p>
+
+							<p>To review and edit your personal information collected through our support services,
+								please
+								contact us by using our web form.</p>
+
+							<p>Some business customers may purchase enhanced support offerings. These offerings are
+								covered by their own contract terms and notices.</p>
+
+							<p>10. Payment Data</p>
+							<p>Payment Data is the information that you provide when you make purchases. This may
+								include your payment instrument number (e.g., credit card, PayPal), your name and
+								billing
+								address, and the security code associated with your payment instrument (e.g., the CSV or
+								CVV). This section provides additional information regarding the collection and use of
+								your
+								payment information.</p>
+
+							<p>Payment Data is used to complete your transaction, as well as for the detection and
+								prevention of fraud. In support of these uses, OkTik may share your Payment Data with
+								banks and other entities that process payment transactions or other financial services,
+								and
+								for fraud prevention and credit risk reduction.</p>
+
+							<p>When you provide Payment Data to us, we may store that data to help you complete future
+								transactions.</p>
+
+							<p>You may remove the payment instrument information associated with your organizational
+								account by contacting us. After you close your account or remove a payment instrument,
+								however, OkTik may retain your payment instrument data for as long as reasonably
+								necessary to complete your existing transaction, to comply with OkTik’s legal and
+								reporting
+								requirements, and for the detection and prevention of fraud.</p>
+
+							<p>11. Handling of Unrequested, Accidentally Provided, and Ancillary Personal Data</p>
+
+							<p>OkTik recognizes that, in certain instances, it may receive personal data that was not
+								actively requested, was provided accidentally, or was transmitted incidentally as part
+								of other
+								information (collectively “Unsolicited Personal Data”. This section explains how OkTik
+								handles such Unsolicited Personal Data.</p>
+
+							<p>11.1 Types of Unsolicited Personal Data</p>
+
+							<p>Unrequested personal data refers to information sent to OkTik without prior facilitation
+								or
+								request, whether directly from the data subject or a third party. Examples include
+								personal
+								data contained in unsolicited messages, resumes, or other communications.
+								Accidentally provided personal data refers to information transmitted to OkTik
+								inadvertently,
+								such as through an e-mail sent to an incorrect recipient.
+								Ancillary personal data refers to information not directly intended for OkTik’s use but
+								included as part of other communications or documentation (e.g., information within an
+								e-
+								mail thread contained in the body of a forwarded message).</p>
+
+							<p>11.2 Handling of Unsolicited Personal Data</p>
+
+							<p>Assessment and Processing: Upon receipt, OkTik assesses Unsolicited Personal Data to
+								determine whether it is necessary for its legitimate business purposes. If not, OkTik
+								will
+								securely delete or anonymize the data, unless retention or other processing is required
+								by
+								law, for the establishment, exercise, or defense of legal claims, to address a risk to
+								the rights
+								and freedoms of the data subject, or under another legal basis.
+								Notification: Where feasible and appropriate, OkTik will notify the data subject of its
+								receipt
+								of Unsolicited Personal Data and inform them of its disposition.
+								Restriction of Processing: Any further processing of Unsolicited Personal Data will only
+								be
+								based on a lawful basis, such as consent or legitimate interest.
+								Purpose Limitation: Relevant Unsolicited Personal Data that was purposefully sent to
+								OkTik
+								will be processed only for the specific purpose for which it was transmitted and in
+								accordance with the applicable lawful basis.
+								Privacy and Security Measures: OkTik will ensure that Unsolicited Personal Data is
+								treated
+								with the same level of confidentiality and security as any other personal data it
+								processes.
+								12. Protecting the Security of Personal Information
+								OkTik is committed to protecting the security of your personal information. We use a
+								variety
+								of security technologies and procedures to help protect your personal information from
+								unauthorized access, use or disclosure. For example, we store the personal information
+								you
+								provide on computer systems that have limited access and are in controlled facilities.
+							</p>
+
+							<p>When we transmit highly confidential information (such as a credit card number or
+								password)
+								over the Internet, we protect it through the use of encryption, such as the Transport
+								Layer
+								Security or Secure Socket Layer protocols.</p>
+
+							<p>If a password is used to help protect your accounts and personal information, it is your
+								responsibility to keep your password confidential. Do not share it. If you are sharing a
+								computer, you should always log out before leaving a site or service to protect access
+								to
+								your information from subsequent users.</p>
+
+							<p>OkTik has received ISO 27001:2022 certification with respect to secure software
+								development and maintenance process including support business functions like Infosec,
+								IT,
+								HR, Sales and Marketing, Project Management, Operations and Call Center.</p>
+
+							<p>For more information about Data Protection, Privacy and Security at OkTik, please visit
+								https://www.OkTik.com/company/trust-center.</p>
+
+							<p>13. Where Information is Stored and Processed
+								Personal information collected on OkTik sites and services may be stored and processed
+								in
+								the United States or any other country where OkTik or its affiliates, subsidiaries or
+								service
+								providers maintain facilities. We take steps to ensure that the data we collect under
+								this
+								Privacy Notice is processed according to the provisions of this statement and the
+								requirements of applicable law wherever the data is located.</p>
+
+							<p>OkTik may retain your personal information for a variety of reasons, such as to comply
+								with
+								our legal obligations, resolve disputes, enforce our agreements, and as long as
+								necessary to
+								fulfill the purposes for which the personal data was collected, as documented in our
+								corporate data retention policy. To learn how to access your personal information, visit
+								section 5 (Accessing And Updating Your Personal Information).</p>
+
+							<p>14. How Can I Contact OkTik Or Exercise My Data Subject Rights?
+								If you have a technical or general support question, please visit https://www.OkTik.com/
+								to
+								learn more about OkTik’s support offerings.</p>
+
+							<p>If you have a general privacy question, or a question with regard to this Privacy Notice,
+								or to
+								exercise your data subject rights under applicable data protection laws, you may contact
+								OkTik:</p>
+
+							<p>by e-mail to: accounts@oktik.net;</p>
+							<p>To find the OkTik subsidiary in your country or region, see https://www.OkTik.net.</p>
+
+							<p>15. Changes to Our Privacy Notice</p>
+							We will occasionally update this Privacy Notice to reflect customer feedback and changes in
+							our services. When we post changes to the Privacy Notice, we will revise the &quot;Revision
+							History” below. If there are material changes to the Privacy Notice regarding how OkTik will
+							use your personal information, we will notify you either by prominently posting a notice of
+							such changes before they take effect or by directly sending you a notification. We encourage
+							you to periodically review the Privacy Notice to learn how OkTik is protecting your
+							information when using our products and services.</p>
+					</div>
 				</div>
+			</div>
+
+
+
+		</section>
+
+
+
+
+
+
+	</main>
+
+	<footer>
+		<div class="footer-container">
+			<div class="row">
+				<div class="col-4">
+					<img src="../photos/logo/OKTik OneTik Logos_OKTik Logo White No POL-09.png" alt="OkTik">
+				</div>
+				<div class="col-8">
+					<div class="row text-align-left">
+						<div class="col ">
+							<h5>Cyprus</h5>
+							<ul>
+								<li> John Kennedy Avenue</li>
+								<li>Suite 305 </li>
+								<li>Nicosia CY 1087</li>
+								<li>Cyprus</li>
+							</ul>
+
+						</div>
+						<div class="col ">
+							<h5>UK</h5>
+							<ul>
+								<li> 1 Rushmills</li>
+								<li>Northampton</li>
+								<li>NN4 7YB</li>
+								<li>info@oktik.net</li>
+							</ul>
+
+						</div>
+						<div class="col">
+							<h5>Hong Kong</h5>
+							<ul>
+								<li> Unit A 15th floor</li>
+								<li> 283 Queens Road Central</li>
+								<li>Hong Kong</li>
+								<li>Tel: +852 28826378</li>
+								<li> info@OkTik.net</li>
+							</ul>
+
+						</div>
+						<div class="col">
+							<h5>OkTik Technology LTD
+								Reg No. 09923383
+								Vat No. GB292769353</h5>
+
+						</div>
+
+					</div>
+					<div class="row">
+						<div class="col terms">
+							<p>OkTik Technology LTD. Reg No. 09923383. Vat No. GB292769353 <a
+									href="https://oktik-net.azurewebsites.net/terms-conditions">Terms and conditions</a>
+								| <a href="https://www.oktik.net/privacy-policy">Privacy Policy</a> </p>
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</div>
 
-		
+		<div class="copyright">
+			© 2025 <a href="#">OkTik</a>. All rights reserved.
+		</div>
+	</footer>
 
-	</section>
-	
-
-
-
-
-    
-</main>
-
-<footer>
-    <div class="footer-container">
-        <div class="row">
-            <div class="col-4">
-                <img src="../photos/logo/OKTik OneTik Logos_OKTik Logo White No POL-09.png" alt="OkTik" >
-            </div>
-            <div class="col-8">
-                <div class="row text-align-left">
-                    <div class="col ">
-                        <h5>Cyprus</h5>
-                        <ul>
-                            <li> John Kennedy Avenue</li>
-                            <li>Suite 305 </li>
-                            <li>Nicosia CY 1087</li>
-                            <li>Cyprus</li>
-                        </ul>
-
-                    </div>
-                    <div class="col ">
-                        <h5>UK</h5>
-                        <ul>
-                            <li> 1 Rushmills</li>
-                            <li>Northampton</li>
-                            <li>NN4 7YB</li>
-                            <li>info@oktik.net</li>
-                        </ul>
-
-                    </div>
-                    <div class="col">
-                        <h5>Hong Kong</h5>
-                        <ul>
-                            <li> Unit A 15th floor</li>
-                            <li> 283 Queens Road Central</li>
-                            <li>Hong Kong</li>
-                            <li>Tel: +852 28826378</li>
-                            <li> info@OkTik.net</li>
-                        </ul>
-
-                    </div>
-                    <div class="col">
-                        <h5>OkTik Technology LTD
-                            Reg No. 09923383
-                            Vat No. GB292769353</h5>
-
-                    </div>
-
-                </div>
-                <div class="row">
-                    <div class="col terms">
-                        <p>OkTik Technology LTD. Reg No. 09923383. Vat No. GB292769353 <a href="https://oktik-net.azurewebsites.net/terms-conditions">Terms and conditions</a> | <a href="https://www.oktik.net/privacy-policy">Privacy Policy</a> </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    
-    <div class="copyright">
-        © 2025 <a href="#">OkTik</a>. All rights reserved.
-    </div>
-</footer>
-
-<!-- Back to top button -->
-<div class="back-to-top" id="backToTop">
-    <i class="fas fa-chevron-up"></i>
-</div>
+	<!-- Back to top button -->
+	<div class="back-to-top" id="backToTop">
+		<i class="fas fa-chevron-up"></i>
+	</div>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js" integrity="sha512-ZHauUc/vByS6JUz/Hl1o8s2kd4QJVLAbkz8clgjtbKUJT+AG1c735aMtVLJftKQYo+LD62QryvoNa+uqy+rCHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="./slider.js"></script>
-<script src="./loader.js"></script>
-<script src="./nav.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+		integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"
+		integrity="sha512-ZHauUc/vByS6JUz/Hl1o8s2kd4QJVLAbkz8clgjtbKUJT+AG1c735aMtVLJftKQYo+LD62QryvoNa+uqy+rCHQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="./slider.js"></script>
+	<script src="./loader.js"></script>
+	<script src="./nav.js"></script>
 
-<script src="./leonam-silva-de-souza.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" integrity="sha512-QAV866KcCo2YSgj8D7BW+Zn3Fe5wVKTWwzKtWy8mkW+tePcJL7JYilvdfrBFQcdz4ODD48GpIPnhTp9UDI37uw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" integrity="sha512-egJ/Y+22P9NQ9aIyVCh0VCOsfydyn8eNmqBy+y2CnJG+fpRIxXMS6jbWP8tVKp0jp+NO5n8WtMUAnNnGoJKi4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.min.js" integrity="sha512-VwGGxhBX+8KC2dD2SwKEugEEsat6flDmaGqegLQ9ku7zKg+GERUd5/ymbcBhNMGxOr+jan1bcmIIHwzZf0gajA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="./card.js"></script>
+	<script src="./leonam-silva-de-souza.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"
+		integrity="sha512-QAV866KcCo2YSgj8D7BW+Zn3Fe5wVKTWwzKtWy8mkW+tePcJL7JYilvdfrBFQcdz4ODD48GpIPnhTp9UDI37uw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+		integrity="sha512-egJ/Y+22P9NQ9aIyVCh0VCOsfydyn8eNmqBy+y2CnJG+fpRIxXMS6jbWP8tVKp0jp+NO5n8WtMUAnNnGoJKi4w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.min.js"
+		integrity="sha512-VwGGxhBX+8KC2dD2SwKEugEEsat6flDmaGqegLQ9ku7zKg+GERUd5/ymbcBhNMGxOr+jan1bcmIIHwzZf0gajA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="./card.js"></script>
 
 
 </body>
+
 </html>
-   
