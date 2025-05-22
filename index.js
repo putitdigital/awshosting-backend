@@ -6,6 +6,7 @@ const app = express();
 app.set('view engine', 'ejs')
 
 //ROUTE IMPORTS
+app.use(express.urlencoded({ extended: true }))
 app.use("/photos",express.static('photos'));
 app.use(express.static('./public'))
 const Router  = require('./routes/routes');
