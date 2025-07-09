@@ -1675,11 +1675,18 @@ footer {
     .banner h1 {
         font-size: 36px;
     }
+    .contact-btn {
+      padding-top: 0px;
+      height: 8vw;
+    }
 }
 
 @media (max-width: 768px) {
 
-    
+        .contact-btn {
+      padding-top: 0px;
+      height: 8vw;
+    }
     .nav-menu {
         order: 3;
         width: 100%;
@@ -1738,7 +1745,10 @@ footer {
     .product-grid {
         grid-template-columns: 1fr;
     }
-    
+        .contact-btn {
+      padding-top: 0px;
+      height: 8vw;
+    }
     .banner-btn {
         width: 100%;
         text-align: center;
@@ -2042,6 +2052,10 @@ h2 {
 }
 
 @media (max-width: 1199px) {
+      .contact-btn {
+      padding-top: 11px;
+      height: 8vw;
+    }
   .hero-style .slide-title h2 {
     font-size: 75px;
   }
@@ -2055,6 +2069,10 @@ h2 {
 }
 
 @media (max-width: 767px) {
+      .contact-btn {
+      padding-top: 2px;
+      height: 10vw;
+    }
   .hero-style .slide-title h2 {
     font-size: 35px;
     margin: 0 0 30px;
