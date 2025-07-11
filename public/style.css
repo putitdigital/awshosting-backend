@@ -2524,6 +2524,12 @@ section {
 .areas_benefits .col{
   padding: 0vw 22vw 0px 4vw;
 }
+.hope .col-2{
+  width: 100%;
+}
+.hope .col-10{
+  width: 100%;
+}
 .in_styling{
   padding-top: 25px;
   width: 100vw;
