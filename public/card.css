@@ -29,6 +29,12 @@
   --side_text_color: #000;
 
 }
+.c-space{
+  margin-bottom: 40px;
+}
+.owl-carousel{
+  /* width: 85%; */
+}
 #sync1 {
     .item {
       background: v(--light-gray);
@@ -38,6 +44,7 @@
       -moz-border-radius: 3px;
       border-radius: 3px;
       text-align: left;
+
       
     }
     border: 1px solid #d6d6d6;
